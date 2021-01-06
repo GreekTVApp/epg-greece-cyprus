@@ -139,7 +139,7 @@ HEADERS = {
     'Referer': 'https://www.digea.gr/EPG/el',
 }
 
-MATRIX = [(d, r) for d in (date.today() + timedelta(n)
+MATRIX = [(d, r) for d in (datetime.now(pytz.timezone("Europe/Athens")).date() + timedelta(n)
                            for n in range(6)) for r in REGIONS]
 
 
