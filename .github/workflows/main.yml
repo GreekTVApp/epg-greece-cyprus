@@ -31,7 +31,7 @@ jobs:
       - name: run
         run: |
           python main.py
-          tv_sort --by-channel --duplicate-error --output EPG-GRCY-tmp.xml EPG-GRCY.xml
+          tv_sort --by-channel --duplicate-error --output EPG-GRCY.xml EPG-GRCY-tmp.xml
           gzip -k EPG-GRCY.xml
         
       - name: Upload
