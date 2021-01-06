@@ -49,4 +49,5 @@ jobs:
           file: ./EPG-GRCY.xml.gz
           asset_name: EPG-GRCY.xml.gz
           tag: EPG
+          body: EPG 
           overwrite: true
