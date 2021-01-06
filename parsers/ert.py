@@ -92,7 +92,7 @@ def generate():
     for channel in CHANNELS:
         _channel(CHANNELS[channel][0], CHANNELS[channel][0])
 
-    for d in (datetime.now(pytz.timezone("Europe/Athens")).date() + timedelta(n) for n in range(11)):
+    for d in (date.today() + timedelta(n) for n in range(11)):
         h = get_data(d)
         parse_html(h, d)
 

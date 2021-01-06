@@ -70,10 +70,12 @@ def parse_html(html, day):
         nci = CHANNELS.get(cid, None)
         if not nci:
             continue
-        for epgrow in div[idx].find_all("div", attrs={'class': 'data'}):
-            _time, _title = epgrow.h4.text.split(" ", 1)
-            _desc = epgrow.h4.next_sibling.strip()
-            _start = '%s%s00' % (day.strftime('%Y%m%d'), _time.replace(':', '').zfill(4)[:4])
+        for program in div[idx].find_all("div", attrs={'class': 'program'}):
+            _data = program.find_all("div", attrs={'class': 'data'})[0]
+            _time = int(program['data-start'])
+            _title = _data.h4.text.split(" ", 1)[1]
+            _desc = _data.h4.next_sibling.strip()
+            _start = '%s%s00' % (day.strftime('%Y%m%d'), str(int(_time/60)).zfill(2) + str(_time % 60).zfill(2))
             _programme(_start, nci[0], _title, _desc)
 
 
