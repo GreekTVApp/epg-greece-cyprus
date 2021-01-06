@@ -22,7 +22,7 @@ CHANNELS = {
     '5710': ('digea.centertv.gr', 'CENTER TV'),
     '5720': ('digea.deltatv.gr', 'DELTA TV'),
     '5725': ('digea.diktyotv.gr', 'DIKTYO TV'),
-    '5730': ('digea.smile.gr', 'SMILE'),
+    '5730': ('digea.smileam.gr', 'SMILE A.M.'),
     '5735': ('digea.enachannel.gr', 'ENA CHANNEL'),
     '5755': ('digea.lydiatv.gr', 'LYDIA TV'),
     '5750': ('digea.orestiadatv.gr', 'ORESTIADA TV'),
