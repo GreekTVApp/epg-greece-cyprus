@@ -18,7 +18,7 @@ CHANNELS = {
     '600': ('digea.skai.gr', 'SKAI'),
     '700': ('digea.star.gr', 'STAR'),
     '900': ('digea.mega.gr', 'MEGA'),
-    '5700': ('digea.alpha.gr', 'ALPHA'),
+    '5700': ('digea.alfa.gr', 'ALFA'),
     '5710': ('digea.centertv.gr', 'CENTER TV'),
     '5720': ('digea.deltatv.gr', 'DELTA TV'),
     '5725': ('digea.diktyotv.gr', 'DIKTYO TV'),
