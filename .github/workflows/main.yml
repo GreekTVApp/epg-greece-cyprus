@@ -21,11 +21,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-      - uses: actions/cache@v2
+      - uses: actions/cache@v2.1.3
         id: cache-id
         with:
           path: ${{ runner.temp }}/cache
-          key: ${{ runner.os }}-cache
+          key: ${{ runner.os }}-cache-v1.0
       
       - uses: airvzxf/cache-anything-new-action@v1.0.1
         with:
