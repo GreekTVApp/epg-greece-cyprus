@@ -21,6 +21,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
+      - uses: actions/cache@v2
+        id: cache-id
+        with:
+          path: ${{ runner.temp }}/cache
+          key: ${{ runner.os }}-cache
+      
       - uses: airvzxf/cache-anything-new-action@v1.0.1
         with:
           script: 'install.sh'
