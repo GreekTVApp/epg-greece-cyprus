@@ -35,3 +35,18 @@ jobs:
           snapshot: '/'
           exclude: '/boot /data /dev /mnt /proc /run /sys'
         
+      - name: run
+        run: |
+          python main.py
+          tv_sort --by-channel --duplicate-error --output EPG-GRCY.xml EPG-GRCY-tmp.xml
+          echo '<!-- generated on '`date -u`' -->' >> EPG-GRCY.xml
+          gzip -k EPG-GRCY.xml
+        
+      - name: Upload
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ./EPG-GRCY.xml.gz
+          asset_name: EPG-GRCY.xml.gz
+          tag: EPG
+          overwrite: true
