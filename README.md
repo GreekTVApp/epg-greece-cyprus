@@ -1,4 +1,6 @@
 # EPG-GRCY
+![MakeEPG](https://github.com/1nikolas/EPG-GRCY/workflows/MakeEPG/badge.svg)
+
 EPG parser for Greek and Cypriot channels. Made for [Greek TV Android App](https://play.google.com/store/apps/details?id=com.cstalking.greektv).
 
 ## Sources
