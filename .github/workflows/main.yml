@@ -29,20 +29,14 @@ jobs:
           snapshot: '/'
           exclude: '/boot /data /dev /mnt /proc /run /sys'
         
-      - name: run
+      - name: Commit files
         run: |
-          python main.py
-          tv_sort --by-channel --duplicate-error --output EPG-GRCY.xml EPG-GRCY-tmp.xml
-          gzip -k EPG-GRCY.xml
-          
-      - name: Simple commit
-        uses: zwaldowski/git-commit-action@v1
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "Add changes" -a
         
-      - name: Upload
-        uses: svenstaro/upload-release-action@v2
+      - name: Push changes
+        uses: ad-m/github-push-action@master
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: ./EPG-GRCY.xml.gz
-          asset_name: EPG-GRCY.xml.gz
-          tag: EPG
-          overwrite: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
