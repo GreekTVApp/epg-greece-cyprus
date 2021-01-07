@@ -3,6 +3,7 @@ from xml.sax.saxutils import escape
 from bs4 import BeautifulSoup
 import requests
 import pytz
+from requests.adapters import HTTPAdapter
 
 EPG_XML = ''
 
@@ -136,7 +137,7 @@ HEADERS = {
     'X-Requested-With': 'XMLHttpRequest',
     'Origin': 'https://www.digea.gr',
     'Connection': 'keep-alive',
-    'Referer': 'https://www.digea.gr/EPG/el',
+    'Referer': 'https://www.digea.gr/EPG/',
 }
 
 MATRIX = [(d, r) for d in (date.today() + timedelta(n)
@@ -163,23 +164,39 @@ def _channel(channel, name):
 
 def parse_html(html, day, channel):
     soup = BeautifulSoup(html, 'lxml')
+    isPastMidnight = False
+    
     for lis in soup.findAll('li'):
+        _day = day
         _time = lis.find('p', attrs={'class': 'time'}).text
         _title = lis.find('p', attrs={'class': None}).text.strip()
         _di = lis.find('a', href=True)['href'][1:]
         _desc = soup.find('div', id=_di).text.strip()
-        _start = '%s%s00' % (day.strftime('%Y%m%d'), _time.replace(':', ''))
+        
+        _time_object = datetime.strptime(_time, "%H:%M")
+        if isPastMidnight:
+            _day = _day + timedelta(1)
+        elif _time_object.hour >= 0 and _time_object.hour < 6:
+            isPastMidnight = True
+            _day = _day + timedelta(1)
+        
+        _start = '%s%s00' % (_day.strftime('%Y%m%d'), _time.replace(':', ''))
         _programme(_start, channel, _title, _desc)
 
 
 def get_data(day, region):
+    day2 = day + timedelta(1)
     data = {
         'tab': region,
-        'curdate1': '%s 00:00:00' % day.strftime('%Y-%m-%d'),
-        'curdate2': '%s 23:59:59' % day.strftime('%Y-%m-%d'),
+        'curdate1': '%s 06:00:00' % day.strftime('%Y-%m-%d'),
+        'curdate2': '%s 05:00:00' % day2.strftime('%Y-%m-%d'),
         'lng': ''
     }
-    res = requests.post(EPG_URL, headers=HEADERS, data=data)
+    
+    s = requests.Session()
+    s.mount('https://', HTTPAdapter(max_retries=5))
+    
+    res = s.post(EPG_URL, headers=HEADERS, data=data, timeout=2)
     return res.json()
 
 
