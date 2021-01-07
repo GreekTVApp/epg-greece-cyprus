@@ -1,4 +1,4 @@
-name: MakeEPG
+name: UpdateEPG
 
 on:
   schedule:
