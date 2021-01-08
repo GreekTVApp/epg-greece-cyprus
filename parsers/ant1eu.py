@@ -70,7 +70,7 @@ def get_data(day):
         'date': day.strftime('%Y-%m-%d'),
     }
     res = requests.post(EPG_URL, headers=HEADERS, params=data)
-    res.encoding = 'windows-1253'
+    res.encoding = 'UTF-8'
     return res.text
 
 
