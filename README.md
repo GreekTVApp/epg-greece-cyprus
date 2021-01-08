@@ -13,6 +13,7 @@ https://github.com/1nikolas/EPG-GRCY/releases/download/EPG/EPG-GRCY.xml.gz
 - Digea (https://www.digea.gr/)
 - ERT (https://www.ert.gr/)
 - Cyta (https://www.cyta.com.cy/)
+- Ant1 Europe (https://www.antennaeurope.gr/)
 
 ## Mappings
 The following table contains the EPG channel mappings
@@ -143,6 +144,7 @@ The following table contains the EPG channel mappings
 | TRAVEL                     | cyta.travel.cy                 | Cyta         |
 | TLC                        | cyta.tlc.cy                    | Cyta         |
 | EURONEWS                   | cyta.euronews.cy               | Cyta         |
+| ANT1 EUROPE                | ant1eu.ant1europe.eu           | Ant1 Europe  |
 
 ## License
 ```
