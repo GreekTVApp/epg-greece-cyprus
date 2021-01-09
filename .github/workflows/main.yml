@@ -42,12 +42,22 @@ jobs:
           echo '<!-- generated on '`date -u`' -->' >> EPG-GRCY.xml
           gzip -k EPG-GRCY.xml
         
-      - name: Upload
+      - name: Upload Gz
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ./EPG-GRCY.xml.gz
           asset_name: EPG-GRCY.xml.gz
+          tag: EPG
+          body: EPG 
+          overwrite: true
+          
+      - name: Upload Xml
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ./EPG-GRCY.xml
+          asset_name: EPG-GRCY.xml
           tag: EPG
           body: EPG 
           overwrite: true
