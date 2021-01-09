@@ -4,9 +4,10 @@
 EPG parser for Greek and Cypriot channels. Made for [Greek TV Android App](https://play.google.com/store/apps/details?id=com.cstalking.greektv).
 
 ## How to use
-Just use the following link; the file is being automatically updated every day.
+Just use one of the following links; the files are being automatically updated every day.
 ```
 https://github.com/1nikolas/EPG-GRCY/releases/download/EPG/EPG-GRCY.xml.gz
+https://github.com/1nikolas/EPG-GRCY/releases/download/EPG/EPG-GRCY.xml
 ```
 
 ## Sources
