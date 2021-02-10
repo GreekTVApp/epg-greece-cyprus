@@ -44,7 +44,7 @@ jobs:
           
       - name: Upload EPG
         run: |
-          git clone https://.:${{ secrets.GITHUB_TOKEN }}@github.com/GreekTVApp/greektvapp.github.io target
+          git clone https://.:${{ secrets.BOT_GITHUB_TOKEN }}@github.com/GreekTVApp/greektvapp.github.io target
           rm target/api/EPG-GRCY.xml.gz
           rm target/api/EPG-GRCY.xml
           cp EPG-GRCY.xml.gz target/api/
@@ -55,4 +55,4 @@ jobs:
           git add api/EPG-GRCY.xml
           git add api/EPG-GRCY.xml.gz
           git commit -m "Update EPG"
-          git push target main
+          git push https://${{ secrets.BOT_GITHUB_TOKEN }}@github.com/GreekTVApp/greektvapp.github.io.git
