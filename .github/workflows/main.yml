@@ -50,5 +50,7 @@ jobs:
           cp EPG-GRCY.xml.gz target/api/
           cp EPG-GRCY.xml target/api/
           cd target
+          git config --global user.name "EPG Bot"
+          git config --global user.email "actions@github.com"
           git commit -m "Update EPG"
           git push target main
