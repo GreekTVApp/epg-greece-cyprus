@@ -41,23 +41,14 @@ jobs:
           tv_sort --by-channel --duplicate-error --output EPG-GRCY.xml EPG-GRCY-tmp.xml
           echo '<!-- generated on '`date -u`' -->' >> EPG-GRCY.xml
           gzip -k EPG-GRCY.xml
-        
-      - name: Upload Gz
-        uses: svenstaro/upload-release-action@v2
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: ./EPG-GRCY.xml.gz
-          asset_name: EPG-GRCY.xml.gz
-          tag: EPG
-          body: EPG 
-          overwrite: true
           
-      - name: Upload Xml
-        uses: svenstaro/upload-release-action@v2
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: ./EPG-GRCY.xml
-          asset_name: EPG-GRCY.xml
-          tag: EPG
-          body: EPG 
-          overwrite: true
+      - name: Upload EPG
+        run: |
+          git clone https://.:${{ secrets.GITHUB_TOKEN }}@github.com/GreekTVApp/greektvapp.github.io target
+          rm target/api/EPG-GRCY.xml.gz
+          rm target/api/EPG-GRCY.xml
+          cp EPG-GRCY.xml.gz target/api/
+          cp EPG-GRCY.xml target/api/
+          cd target
+          git commit -m "Update EPG"
+          git push target main
