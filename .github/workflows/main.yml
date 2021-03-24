@@ -72,4 +72,4 @@ jobs:
           git config --global user.email "actions@github.com"
           git add api/getEpg
           git commit -m "Update EPG"
-          git push https://${{ secrets.BOT_GITHUB_TOKEN }}@github.com/GreekTVApp/greektvapp.github.io.git
+          git push https://${{ secrets.BOT_GITHUB_TOKEN }}@github.com/GreekTVApp/GreekTV.git
