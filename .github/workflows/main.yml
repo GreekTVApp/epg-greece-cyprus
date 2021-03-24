@@ -41,18 +41,35 @@ jobs:
           tv_sort --by-channel --duplicate-error --output epg.xml EPG-GRCY-tmp.xml
           echo '<!-- generated on '`date -u`' -->' >> epg.xml
           gzip -k epg.xml
+        
+      - name: Upload Gz
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ./EPG-GRCY.xml.gz
+          asset_name: EPG-GRCY.xml.gz
+          tag: EPG
+          body: EPG 
+          overwrite: true
           
-      - name: Upload EPG
+      - name: Upload Xml
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ./EPG-GRCY.xml
+          asset_name: EPG-GRCY.xml
+          tag: EPG
+          body: EPG 
+          overwrite: true
+          
+      - name: Update API
         run: |
-          git clone https://.:${{ secrets.BOT_GITHUB_TOKEN }}@github.com/GreekTVApp/greektvapp.github.io target
-          rm target/api/epg.xml.gz
-          rm target/api/epg.xml
-          cp epg.xml.gz target/api/
-          cp epg.xml target/api/
+          git clone https://.:${{ secrets.BOT_GITHUB_TOKEN }}@github.com/GreekTVApp/GreekTV target
+          rm target/api/getEpg
+          cp epg.xml.gz target/api/getEpg
           cd target
           git config --global user.name "Github Actions"
           git config --global user.email "actions@github.com"
-          git add api/epg.xml
-          git add api/epg.xml.gz
+          git add api/getEpg
           git commit -m "Update EPG"
           git push https://${{ secrets.BOT_GITHUB_TOKEN }}@github.com/GreekTVApp/greektvapp.github.io.git
