@@ -46,8 +46,8 @@ jobs:
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: ./EPG-GRCY.xml.gz
-          asset_name: EPG-GRCY.xml.gz
+          file: ./epg.xml.gz
+          asset_name: epg.xml.gz
           tag: EPG
           body: EPG 
           overwrite: true
@@ -56,8 +56,8 @@ jobs:
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: ./EPG-GRCY.xml
-          asset_name: EPG-GRCY.xml
+          file: ./epg.xml
+          asset_name: epg.xml
           tag: EPG
           body: EPG 
           overwrite: true
