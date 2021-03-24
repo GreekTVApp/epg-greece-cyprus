@@ -6,8 +6,8 @@ EPG parser for Greek and Cypriot channels. Made for [Greek TV Android App](https
 ## How to use
 Just use one of the following links; the files are being automatically updated every day.
 ```
-https://greektvapp.github.io/api/epg.xml.gz
-https://greektvapp.github.io/api/epg.xml
+https://github.com/GreekTVApp/EPG-GRCY/releases/download/EPG/epg.xml.gz
+https://github.com/GreekTVApp/EPG-GRCY/releases/download/EPG/epg.xml
 ```
 
 ## Sources
