@@ -31,6 +31,8 @@ CHANNELS = {
     'ch150': ('cyta.travel.cy', 'TRAVEL'),
     'ch100': ('cyta.tlc.cy', 'TLC'),
     'ch172': ('cyta.euronews.cy', 'EURONEWS'),
+    'ch2': ('cyta.eurosport1.cy', 'EUROSPORT 1'),
+    'ch23': ('cyta.eurosport2.cy', 'EUROSPORT 2'),
 }
 
 HEADERS = {
