@@ -9,7 +9,7 @@ def main():
     ant1eu_epg = ant1eu.generate()
 
     final_xml = '<?xml version="1.0" encoding="UTF-8" ?>\n' \
-                '<tv generator-info-name="EPG-GRCY" generator-info-url="https://github.com/1nikolas/EPG-GRCY">\n'
+                '<tv generator-info-name="epg-greece-cyprus" generator-info-url="https://github.com/GreekTVApp/epg-greece-cyprus">\n'
 
     final_xml += digea_epg + '\n'
     final_xml += ert_epg + '\n'
