@@ -141,7 +141,7 @@ HEADERS = {
 }
 
 MATRIX = [(d, r) for d in (datetime.now(pytz.timezone("Europe/Athens")).date() + timedelta(n)
-                           for n in range(6)) for r in REGIONS]
+                           for n in range(10)) for r in REGIONS]
 
 
 def append(text):
