@@ -145,6 +145,7 @@ The following table contains the EPG channel mappings
 | TRAVEL                     | cyta.travel.cy                 | Cyta         |
 | TLC                        | cyta.tlc.cy                    | Cyta         |
 | EURONEWS                   | cyta.euronews.cy               | Cyta         |
+| GREEK CINEMA               | cyta.greekcinema.cy            | Cyta         |
 | ANT1 EUROPE                | ant1eu.ant1europe.eu           | Ant1 Europe  |
 
 ## License
