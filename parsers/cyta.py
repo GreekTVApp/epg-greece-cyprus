@@ -33,6 +33,7 @@ CHANNELS = {
     'ch172': ('cyta.euronews.cy', 'EURONEWS'),
     'ch2': ('cyta.eurosport1.cy', 'EUROSPORT 1'),
     'ch23': ('cyta.eurosport2.cy', 'EUROSPORT 2'),
+    'ch133': ('cyta.greekcinema.cy', 'GREEK CINEMA')
 }
 
 HEADERS = {
