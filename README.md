@@ -146,6 +146,18 @@ The following table contains the EPG channel mappings
 | TLC                        | cyta.tlc.cy                    | Cyta         |
 | EURONEWS                   | cyta.euronews.cy               | Cyta         |
 | GREEK CINEMA               | cyta.greekcinema.cy            | Cyta         |
+| Cytavision Sports 1        | cyta.cytavisionsports1.cy      | Cyta         |
+| Cytavision Sports 2        | cyta.cytavisionsports2.cy      | Cyta         |
+| Cytavision Sports 3        | cyta.cytavisionsports3.cy      | Cyta         |
+| Cytavision Sports 4        | cyta.cytavisionsports4.cy      | Cyta         |
+| Cytavision Sports 5        | cyta.cytavisionsports5.cy      | Cyta         |
+| Cytavision Sports 6        | cyta.cytavisionsports6.cy      | Cyta         |
+| Cytavision Sports 7        | cyta.cytavisionsports7.cy      | Cyta         |
+| Cablenet Sports 1          | cyta.cablenetsports1.cy        | Cyta         |
+| Cablenet Sports 2          | cyta.cablenetsports2.cy        | Cyta         |
+| Primetel Sports 1          | cyta.primetelsports1.cy        | Cyta         |
+| Primetel Sports 2          | cyta.primetelsports2.cy        | Cyta         |
+| Primetel Sports 3          | cyta.primetelsports3.cy        | Cyta         |
 | ANT1 EUROPE                | ant1eu.ant1europe.eu           | Ant1 Europe  |
 
 ## License

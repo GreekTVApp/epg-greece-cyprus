@@ -33,7 +33,18 @@ CHANNELS = {
     'ch172': ('cyta.euronews.cy', 'EURONEWS'),
     'ch2': ('cyta.eurosport1.cy', 'EUROSPORT 1'),
     'ch23': ('cyta.eurosport2.cy', 'EUROSPORT 2'),
-    'ch133': ('cyta.greekcinema.cy', 'GREEK CINEMA')
+    'ch133': ('cyta.greekcinema.cy', 'GREEK CINEMA'),
+    'ch44': ('cyta.cytavisionsports1.cy', 'Cytavision Sports 1'),
+    'ch38': ('cyta.cytavisionsports2.cy', 'Cytavision Sports 2'),
+    'ch36': ('cyta.cytavisionsports3.cy', 'Cytavision Sports 3'),
+    'ch67': ('cyta.cytavisionsports5.cy', 'Cytavision Sports 5'),
+    'ch34': ('cyta.cytavisionsports6.cy', 'Cytavision Sports 6'),
+    'ch324': ('cyta.cytavisionsports7.cy', 'Cytavision Sports 7'),
+    'ch327': ('cyta.cablenetsports1.cy', 'Cablenet Sports 1'),
+    'ch328': ('cyta.cablenetsports2.cy', 'Cablenet Sports 2'),
+    'ch333': ('cyta.primetelsports1.cy', 'Primetel Sports 1'),
+    'ch334': ('cyta.primetelsports2.cy', 'Primetel Sports 2'),
+    'ch335': ('cyta.primetelsports3.cy', 'Primetel Sports 3'),
 }
 
 HEADERS = {
