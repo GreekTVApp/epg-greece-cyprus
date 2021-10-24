@@ -158,6 +158,11 @@ The following table contains the EPG channel mappings
 | Primetel Sports 1          | cyta.primetelsports1.cy        | Cyta         |
 | Primetel Sports 2          | cyta.primetelsports2.cy        | Cyta         |
 | Primetel Sports 3          | cyta.primetelsports3.cy        | Cyta         |
+| Nova Sports Prime          | cyta.novasportsprime.cy        | Cyta         |
+| Nova Sports 2              | cyta.novasports2.cy            | Cyta         |
+| Nova Sports 3              | cyta.novasports3.cy            | Cyta         |
+| Nova Sports 4              | cyta.novasports4.cy            | Cyta         |
+| Nova Sports 5              | cyta.novasports5.cy            | Cyta         |
 | ANT1 EUROPE                | ant1eu.ant1europe.eu           | Ant1 Europe  |
 
 ## License

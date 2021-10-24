@@ -45,6 +45,11 @@ CHANNELS = {
     'ch333': ('cyta.primetelsports1.cy', 'Primetel Sports 1'),
     'ch334': ('cyta.primetelsports2.cy', 'Primetel Sports 2'),
     'ch335': ('cyta.primetelsports3.cy', 'Primetel Sports 3'),
+    'ch94': ('cyta.novasportsprime.cy', 'Nova Sports Prime'),
+    'ch95': ('cyta.novasports2.cy', 'Nova Sports 2'),
+    'ch96': ('cyta.novasports3.cy', 'Nova Sports 3'),
+    'ch97': ('cyta.novasports4.cy', 'Nova Sports 4'),
+    'ch99': ('cyta.novasports5.cy', 'Nova Sports 5'),
 }
 
 HEADERS = {
