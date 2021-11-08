@@ -163,6 +163,11 @@ The following table contains the EPG channel mappings
 | Nova Sports 3              | cyta.novasports3.cy            | Cyta         |
 | Nova Sports 4              | cyta.novasports4.cy            | Cyta         |
 | Nova Sports 5              | cyta.novasports5.cy            | Cyta         |
+| Nova Cinema 1              | cyta.novacinema1.cy            | Cyta         |
+| Nova Cinema 2              | cyta.novacinema2.cy            | Cyta         |
+| Nova Cinema 3              | cyta.novacinema3.cy            | Cyta         |
+| Nova Cinema 4              | cyta.novacinema4.cy            | Cyta         |
+| Nova Life                  | cyta.novalife.cy               | Cyta         |
 | ANT1 EUROPE                | ant1eu.ant1europe.eu           | Ant1 Europe  |
 
 ## License

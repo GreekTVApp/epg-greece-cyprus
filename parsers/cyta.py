@@ -50,6 +50,11 @@ CHANNELS = {
     'ch96': ('cyta.novasports3.cy', 'Nova Sports 3'),
     'ch97': ('cyta.novasports4.cy', 'Nova Sports 4'),
     'ch99': ('cyta.novasports5.cy', 'Nova Sports 5'),
+    'ch162': ('cyta.novacinema1.cy', 'Nova Cinema 1'),
+    'ch163': ('cyta.novacinema2.cy', 'Nova Cinema 2'),
+    'ch301': ('cyta.novacinema3.cy', 'Nova Cinema 3'),
+    'ch302': ('cyta.novacinema4.cy', 'Nova Cinema 4'),
+    'ch310': ('cyta.novalife.cy', 'Nova Life'),
 }
 
 HEADERS = {
