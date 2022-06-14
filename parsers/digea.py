@@ -113,35 +113,18 @@ CHANNELS = {
     '5815': ('digea.tvm.gr', 'TVM'),
 }
 
-REGIONS = [
-    'Nationwide',
-    #'E-Macedonia-Thrace-R-Z-1',
-    #'C-Macedonia-R-Z-2-3',
-    #'W-Macedonia-R-Z-4',
-    #'W-Greece-R-Z-5',
-    #'Peloponnese-R-Z-6',
-    #'Thessaly-R-Z-7',
-    #'C-Greece-R-Z-8',
-    #'Attica-R-Z-9',
-    #'Crete-R-Z-10',
-    #'Dodecanese-Samos-R-Z-11',
-    #'Cyclades-R-Z-12',
-    #'NE-Aegean-R-Z-13',
-]
-
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0',
-    'Accept': 'application/json, text/javascript, */*; q=0.01',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0',
+    'Accept': '*/*',
     'Accept-Language': 'en-US,en;q=0.5',
     'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
     'X-Requested-With': 'XMLHttpRequest',
-    'Origin': 'https://www.digea.gr',
-    'Connection': 'keep-alive',
-    'Referer': 'https://www.digea.gr/EPG/',
+    'Origin': 'https://digea.gr',
+    'Referer': 'https://digea.gr/epg/',
 }
 
-MATRIX = [(d, r) for d in (datetime.now(pytz.timezone("Europe/Athens")).date() + timedelta(n)
-                           for n in range(10)) for r in REGIONS]
+MATRIX = [d for d in (datetime.now(pytz.timezone("Europe/Athens")).date() + timedelta(n)
+                           for n in range(10))]
 
 
 def append(text):
@@ -162,7 +145,7 @@ def _channel(channel, name):
     append('  </channel>')
     
 
-def get_data(day, region):
+def get_data(day):
     data = {
         'action': 'get_events',
         'date': day.strftime('%Y-%m-%d')
@@ -178,8 +161,8 @@ def get_data(day, region):
 def generate():
     chc = []
 
-    for d, r in MATRIX:
-        json = get_data(d, r)
+    for d in MATRIX:
+        json = get_data(d)
         for entry in json:
             nci = CHANNELS.get(entry['channel_id'], None)
             if not nci:
