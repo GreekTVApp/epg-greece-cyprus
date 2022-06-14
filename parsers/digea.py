@@ -187,8 +187,8 @@ def generate():
             if nci not in chc:
                 chc.append(nci)
                 _channel(nci[0], nci[1])
-
-            _programme(entry['actual_time'], nci[0], entry['title_gre'], entry['long_synopsis_gre'])
+            start = datetime.fromisoformat(entry['actual_time']).strftime('%Y%m%d%H%M%S')
+            _programme(start, nci[0], entry['title_gre'], entry['long_synopsis_gre'])
 
     global EPG_XML
     return EPG_XML
