@@ -7,7 +7,7 @@ from requests.adapters import HTTPAdapter
 
 EPG_XML = ''
 
-EPG_URL = 'https://www.digea.gr/ajax_epg.php'
+EPG_URL = 'https://digea.gr/wp-admin/admin-ajax.php'
 
 TIMEZONE = datetime.now(pytz.timezone('Europe/Athens')).strftime('%z')
 
@@ -113,35 +113,18 @@ CHANNELS = {
     '5815': ('digea.tvm.gr', 'TVM'),
 }
 
-REGIONS = [
-    'Nationwide',
-    'E-Macedonia-Thrace-R-Z-1',
-    'C-Macedonia-R-Z-2-3',
-    'W-Macedonia-R-Z-4',
-    'W-Greece-R-Z-5',
-    'Peloponnese-R-Z-6',
-    'Thessaly-R-Z-7',
-    'C-Greece-R-Z-8',
-    'Attica-R-Z-9',
-    'Crete-R-Z-10',
-    'Dodecanese-Samos-R-Z-11',
-    'Cyclades-R-Z-12',
-    'NE-Aegean-R-Z-13',
-]
-
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0',
-    'Accept': 'application/json, text/javascript, */*; q=0.01',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0',
+    'Accept': '*/*',
     'Accept-Language': 'en-US,en;q=0.5',
     'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
     'X-Requested-With': 'XMLHttpRequest',
-    'Origin': 'https://www.digea.gr',
-    'Connection': 'keep-alive',
-    'Referer': 'https://www.digea.gr/EPG/',
+    'Origin': 'https://digea.gr',
+    'Referer': 'https://digea.gr/epg/',
 }
 
-MATRIX = [(d, r) for d in (datetime.now(pytz.timezone("Europe/Athens")).date() + timedelta(n)
-                           for n in range(10)) for r in REGIONS]
+MATRIX = [d for d in (datetime.now(pytz.timezone("Europe/Athens")).date() + timedelta(n)
+                           for n in range(10))]
 
 
 def append(text):
@@ -160,60 +143,35 @@ def _channel(channel, name):
     append('  <channel id="{}">'.format(channel))
     append('    <display-name lang="el">{}</display-name>'.format(escape(name)))
     append('  </channel>')
-
-
-def parse_html(html, day, channel):
-    soup = BeautifulSoup(html, 'lxml')
-    isPastMidnight = False
     
-    for lis in soup.findAll('li'):
-        _day = day
-        _time = lis.find('p', attrs={'class': 'time'}).text
-        _title = lis.find('p', attrs={'class': None}).text.strip()
-        _di = lis.find('a', href=True)['href'][1:]
-        _desc = soup.find('div', id=_di).text.strip()
-        
-        _time_object = datetime.strptime(_time, "%H:%M")
-        if isPastMidnight:
-            _day = _day + timedelta(1)
-        elif _time_object.hour >= 0 and _time_object.hour < 6:
-            isPastMidnight = True
-            _day = _day + timedelta(1)
-        
-        _start = '%s%s00' % (_day.strftime('%Y%m%d'), _time.replace(':', ''))
-        _programme(_start, channel, _title, _desc)
 
-
-def get_data(day, region):
-    day2 = day + timedelta(1)
+def get_data(day):
     data = {
-        'tab': region,
-        'curdate1': '%s 06:00:00' % day.strftime('%Y-%m-%d'),
-        'curdate2': '%s 05:00:00' % day2.strftime('%Y-%m-%d'),
-        'lng': ''
+        'action': 'get_events',
+        'date': day.strftime('%Y-%m-%d')
     }
     
     s = requests.Session()
     s.mount('https://', HTTPAdapter(max_retries=5))
     
-    res = s.post(EPG_URL, headers=HEADERS, data=data, timeout=2)
+    res = s.post(EPG_URL, headers=HEADERS, data=data, timeout=2, verify=False)
     return res.json()
 
 
 def generate():
     chc = []
 
-    for d, r in MATRIX:
-        js = get_data(d, r)
-        for ci in js['programs']:
-            nci = CHANNELS.get(ci, None)
+    for d in MATRIX:
+        json = get_data(d)
+        for entry in json:
+            nci = CHANNELS.get(entry['channel_id'], None)
             if not nci:
                 continue
             if nci not in chc:
                 chc.append(nci)
                 _channel(nci[0], nci[1])
-            _html = js['programs'][ci]['html']
-            parse_html(_html, d, nci[0])
+            start = datetime.fromisoformat(entry['actual_time']).strftime('%Y%m%d%H%M%S')
+            _programme(start, nci[0], entry['title_gre'], entry['long_synopsis_gre'])
 
     global EPG_XML
     return EPG_XML
