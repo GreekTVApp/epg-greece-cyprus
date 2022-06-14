@@ -45,6 +45,7 @@ jobs:
           gzip -k epg.xml
         
       - name: Upload Gz
+        if: ${{ github.event_name != 'pull_request'}}
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
@@ -55,6 +56,7 @@ jobs:
           overwrite: true
           
       - name: Upload Xml
+        if: ${{ github.event_name != 'pull_request'}}
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
