@@ -23,20 +23,27 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-      - uses: actions/cache@v2.1.3
-        id: cache-id
-        with:
-          path: ${{ runner.temp }}/cache
-          key: ${{ runner.os }}-cache-v1.0
+      #- uses: actions/cache@v2.1.3
+        #id: cache-id
+        #with:
+          #path: ${{ runner.temp }}/cache
+          #key: ${{ runner.os }}-cache-v1.0
       
-      - uses: airvzxf/cache-anything-new-action@v1.0.1
-        with:
-          script: 'install.sh'
-          is_cached: ${{ steps.cache-id.outputs.cache-hit }}
-          cache: ${{ runner.temp }}/cache
-          snapshot: '/'
-          exclude: '/boot /data /dev /mnt /proc /run /sys'
-        
+      #- uses: airvzxf/cache-anything-new-action@v1.0.1
+        #with:
+          #script: 'install.sh'
+          #is_cached: ${{ steps.cache-id.outputs.cache-hit }}
+          #cache: ${{ runner.temp }}/cache
+          #snapshot: '/'
+          #exclude: '/boot /data /dev /mnt /proc /run /sys'
+      - name: install
+        run: |
+          # make file runnable, might not be necessary
+          chmod +x "${GITHUB_WORKSPACE}/.github/workflows/install.sh"
+
+          # run script
+          "${GITHUB_WORKSPACE}/.github/workflows/install.sh"
+          
       - name: run
         run: |
           python main.py
