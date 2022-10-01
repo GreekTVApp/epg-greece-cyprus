@@ -1,25 +1,32 @@
-from parsers import digea, ert, cyta, ant1eu
-import codecs
+from channels import channels
+from parsers import digeaparser, cytaparser, ertflixparser, ant1euparser
+import traceback
+import xmlutil
 
 
 def main():
-    digea_epg = digea.generate()
-    ert_epg = ert.generate()
-    cyta_epg = cyta.generate()
-    ant1eu_epg = ant1eu.generate()
+    xmlutil.append('<?xml version="1.0" encoding="UTF-8" ?>\n')
+    xmlutil.append('<tv generator-info-name="epg-greece-cyprus" '
+                   'generator-info-url="https://github.com/GreekTVApp/epg-greece-cyprus">\n')
 
-    final_xml = '<?xml version="1.0" encoding="UTF-8" ?>\n' \
-                '<tv generator-info-name="epg-greece-cyprus" generator-info-url="https://github.com/GreekTVApp/epg-greece-cyprus">\n'
+    digea_cache = {}
 
-    final_xml += digea_epg + '\n'
-    final_xml += ert_epg + '\n'
-    final_xml += cyta_epg + '\n'
-    final_xml += ant1eu_epg
+    for channel in channels:
+        try:
+            if channel.get("provider") == 'digea':
+                digeaparser.parse(channel.get('serverName'), channel.get('epgName'), digea_cache)
+            elif channel.get("provider") == 'cyta':
+                cytaparser.parse(channel.get('serverName'), channel.get('epgName'))
+            elif channel.get("provider") == 'ertflix':
+                ertflixparser.parse(channel.get('serverName'), channel.get('epgName'))
+            elif channel.get("provider") == 'ant1eu':
+                ant1euparser.parse(channel.get('serverName'), channel.get('epgName'))
+        except:
+            traceback.print_exc()
+            print(f'{channel.get("epgName")} error')
+            print('----------------------------------------')
 
-    final_xml += '</tv>'
-
-    with codecs.open("EPG-GRCY-tmp.xml", "w", "utf-8-sig") as f:
-        f.write(final_xml)
+    xmlutil.append('</tv>')
 
 
 if __name__ == '__main__':
