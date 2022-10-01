@@ -5,7 +5,7 @@ import pytz
 
 
 def append(text):
-    with codecs.open("epg-tmp.xml", "a", "utf-8-sig") as f:
+    with codecs.open("epg-tmp.xml", "a", "utf-8") as f:
         f.write(text + '\n')
 
 

@@ -5,9 +5,9 @@ import xmlutil
 
 
 def main():
-    xmlutil.append('<?xml version="1.0" encoding="UTF-8" ?>\n')
+    xmlutil.append('<?xml version="1.0" encoding="UTF-8" ?>')
     xmlutil.append('<tv generator-info-name="epg-greece-cyprus" '
-                   'generator-info-url="https://github.com/GreekTVApp/epg-greece-cyprus">\n')
+                   'generator-info-url="https://github.com/GreekTVApp/epg-greece-cyprus">')
 
     digea_cache = {}
 
