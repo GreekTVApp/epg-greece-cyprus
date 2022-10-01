@@ -11,6 +11,7 @@ def append(text):
 
 def push(channel_name, data):
     append('<channel id="{}">'.format(channel_name))
+    append('<display-name>{}</display-name>'.format(escape(channel_name)))
     append('</channel>')
 
     for channel in data:
