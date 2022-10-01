@@ -55,7 +55,7 @@ def parse(server_name, epg_name):
                 'channel': epg_name,
                 'title': title,
                 'start_time': start_time.timestamp(),
-                'description': ''
+                'description': 'No description available'
             }
 
             channel_epg.append(program_object)
