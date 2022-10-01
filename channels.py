@@ -138,8 +138,36 @@ channels = [
     {"epgName": "extracy", "serverName": "561178", "provider": "cyta"},
     {"epgName": "smilecy", "serverName": "561210", "provider": "cyta"},
     {"epgName": "verginacy", "serverName": "2221", "provider": "cyta"},
+    
+    {"epgName": "cytavisionsports1", "serverName": "5262045", "provider": "cyta"},
+    {"epgName": "cytavisionsports2", "serverName": "5262066", "provider": "cyta"},
+    {"epgName": "cytavisionsports3", "serverName": "5264007", "provider": "cyta"},
+    {"epgName": "cytavisionsports4", "serverName": "5263996", "provider": "cyta"},
+    {"epgName": "cytavisionsports5", "serverName": "5264028", "provider": "cyta"},
+    {"epgName": "cytavisionsports6", "serverName": "5240465", "provider": "cyta"},
+    {"epgName": "cytavisionsports7", "serverName": "24653429", "provider": "cyta"},
+    
+    
+    {"epgName": "cablenetsports1", "serverName": "24718511", "provider": "cyta"},
+    {"epgName": "cablenetsports2", "serverName": "24720479", "provider": "cyta"},
+    
+    {"epgName": "primetel1", "serverName": "24721200", "provider": "cyta"},
+    {"epgName": "primetel2", "serverName": "24745093", "provider": "cyta"},
+    {"epgName": "primetel3", "serverName": "24745840", "provider": "cyta"},
+    
+    {"epgName": "novasportsstart", "serverName": "46137848", "provider": "cyta"},
+    {"epgName": "novasportsprime", "serverName": "583741", "provider": "cyta"},
+    {"epgName": "novasports2", "serverName": "213644", "provider": "cyta"},
+    {"epgName": "novasports3", "serverName": "216258", "provider": "cyta"},
+    {"epgName": "novasports4", "serverName": "213745", "provider": "cyta"},
+    {"epgName": "novasports5", "serverName": "213874", "provider": "cyta"},
+    {"epgName": "novasports6", "serverName": "46137467", "provider": "cyta"},
+    {"epgName": "novasportsextra1", "serverName": "52027167", "provider": "cyta"},
+    {"epgName": "novasportsextra2", "serverName": "52027399", "provider": "cyta"},
+    {"epgName": "novasportsextra3", "serverName": "52027412", "provider": "cyta"},
+    {"epgName": "novasportsextra4", "serverName": "52027180", "provider": "cyta"},
 
-
+    
     # Ertflix
     {"epgName": "ert1", "serverName": "ept1-live", "provider": "ertflix"},
     {"epgName": "ert2", "serverName": "ept2-live", "provider": "ertflix"},
