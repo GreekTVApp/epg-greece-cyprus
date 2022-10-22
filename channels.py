@@ -166,8 +166,29 @@ channels = [
     {"epgName": "novasportsextra2", "serverName": "52027399", "provider": "cyta"},
     {"epgName": "novasportsextra3", "serverName": "52027412", "provider": "cyta"},
     {"epgName": "novasportsextra4", "serverName": "52027180", "provider": "cyta"},
-
     
+    {"epgName": "Discovery channel", "serverName": "213732", "provider": "cyta"},
+    {"epgName": "Discovery Science", "serverName": "213801", "provider": "cyta"},
+    {"epgName": "Animal Planet", "serverName": "211380", "provider": "cyta"},
+    {"epgName": "National Geographic Channel", "serverName": "2083", "provider": "cyta"},
+    {"epgName": "Nat Geo Wild", "serverName": "531160", "provider": "cyta"},
+    {"epgName": "BBC Earth", "serverName": "4634877", "provider": "cyta"},
+    {"epgName": "History Channel", "serverName": "289489", "provider": "cyta"},
+    {"epgName": "Investigation Discovery", "serverName": "573863", "provider": "cyta"},
+    {"epgName": "TLC", "serverName": "218874", "provider": "cyta"},
+    {"epgName": "HGTV", "serverName": "216441", "provider": "cyta"},
+    {"epgName": "Food Network", "serverName": "213949", "provider": "cyta"},
+    {"epgName": "E! Entertainment", "serverName": "213814", "provider": "cyta"},
+    
+    
+    {"epgName": "Eurosport 1", "serverName": "216356", "provider": "cyta"},
+    {"epgName": "Eurosport 2", "serverName": "586291", "provider": "cyta"},
+    {"epgName": "Hellenic Parliament", "serverName": "216630", "provider": "cyta"},
+    {"epgName": "Baby TV", "serverName": "2743", "provider": "cyta"},
+    {"epgName": "EuroNews (Gr)", "serverName": "573974", "provider": "cyta"},
+    
+    
+ 
     # Ertflix
     {"epgName": "ert1", "serverName": "ept1-live", "provider": "ertflix"},
     {"epgName": "ert2", "serverName": "ept2-live", "provider": "ertflix"},
