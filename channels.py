@@ -178,7 +178,7 @@ channels = [
     {"epgName": "TLC", "serverName": "218874", "provider": "cyta"},
     {"epgName": "HGTV", "serverName": "216441", "provider": "cyta"},
     {"epgName": "FoodNetwork", "serverName": "213949", "provider": "cyta"},
-    {"epgName": "E!Entertainment", "serverName": "213814", "provider": "cyta"},
+    {"epgName": "EEntertainment", "serverName": "213814", "provider": "cyta"},
     
     
     {"epgName": "Eurosport1", "serverName": "216356", "provider": "cyta"},
