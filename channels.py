@@ -88,7 +88,7 @@ channels = [
     {"epgName": "action24", "serverName": "3004", "provider": "digea"},
     {"epgName": "atticatv", "serverName": "3008", "provider": "digea"},
     {"epgName": "bluesky", "serverName": "3012", "provider": "digea"},
-    {"epgName": "channel9", "serverName": "3016", "provider": "digea"},
+    {"epgName": "onetv", "serverName": "3016", "provider": "digea"},
     {"epgName": "epsilon", "serverName": "3030", "provider": "digea"},
     {"epgName": "hightv", "serverName": "3034", "provider": "digea"},
     {"epgName": "kontra", "serverName": "3038", "provider": "digea"},
