@@ -65,10 +65,10 @@ channels = [
     {"epgName": "messogeiostv", "serverName": "5034", "provider": "digea"},
     {"epgName": "anet", "serverName": "5036", "provider": "digea"},
     {"epgName": "ort", "serverName": "5038", "provider": "digea"},
-    {"epgName": "plp", "serverName": "5007", "provider": "digea"},
+    {"epgName": "patratv", "serverName": "5007", "provider": "digea"},
     {"epgName": "rtpkentro", "serverName": "5040", "provider": "digea"},
     {"epgName": "super", "serverName": "5042", "provider": "digea"},
-    {"epgName": "superb", "serverName": "5044", "provider": "digea"},
+    {"epgName": "pronews", "serverName": "5044", "provider": "digea"},
 
     # Thessalia
     {"epgName": "astratv", "serverName": "5950", "provider": "digea"},
