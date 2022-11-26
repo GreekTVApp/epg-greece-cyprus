@@ -192,7 +192,7 @@ channels = [
     # Ertflix
     {"epgName": "ert1", "serverName": "ept1-live", "provider": "ertflix"},
     {"epgName": "ert2", "serverName": "ept2-live", "provider": "ertflix"},
-    {"epgName": "ert3", "serverName": "ept3-live", "provider": "ertflix"},
+    {"epgName": "ert3", "serverName": "ept3-live-2", "provider": "ertflix"},
     {"epgName": "ertsports", "serverName": "ept-sports-live", "provider": "ertflix"},
     {"epgName": "ertworld", "serverName": "ept-world-live", "provider": "ertflix"},
     {"epgName": "ertnews", "serverName": "ert-news", "provider": "ertflix"},
