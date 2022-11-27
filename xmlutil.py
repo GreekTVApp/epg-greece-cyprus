@@ -14,17 +14,15 @@ def push(channel_name, data):
     append('<display-name>{}</display-name>'.format(escape(channel_name)))
     append('</channel>')
     
-    timezone = datetime.now(pytz.timezone('Europe/Athens')).strftime('%z')
-
     for channel in data:
-        start = datetime.fromtimestamp(channel['start_time'], pytz.timezone('Europe/Athens')).strftime('%Y%m%d%H%M%S')
+        start = datetime.fromtimestamp(channel['start_time'], pytz.timezone('Europe/Athens')).strftime('%Y%m%d%H%M%S %z')
 
         stop = ''
 
         if 'end_time' in channel:
-            stop = 'stop="{} {}"'.format(datetime.fromtimestamp(channel['end_time'], pytz.timezone('Europe/Athens')).strftime('%Y%m%d%H%M%S'), timezone)
+            stop = 'stop="{}"'.format(datetime.fromtimestamp(channel['end_time'], pytz.timezone('Europe/Athens')).strftime('%Y%m%d%H%M%S %z'))
 
-        append('<programme start="{} {}" {} channel="{}">'.format(start, timezone, stop, channel_name))
+        append('<programme start="{}" {} channel="{}">'.format(start, stop, channel_name))
         append('<title lang="el">{}</title>'.format(escape(channel['title'])))
         append('<desc>{}</desc>'.format(escape(channel['description'])))
         append('</programme>')
