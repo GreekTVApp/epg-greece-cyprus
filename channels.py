@@ -28,7 +28,7 @@ channels = [
     # Kendriki Makedonia
     {"epgName": "4e", "serverName": "5850", "provider": "digea"},
     {"epgName": "atlastv", "serverName": "5855", "provider": "digea"},
-    {"epgName": "verginatv", "serverName": "5860", "provider": "digea"},
+    {"epgName": "berginatv", "serverName": "5860", "provider": "digea"},
     {"epgName": "europeone", "serverName": "5880", "provider": "digea"},
     {"epgName": "epsilonthess", "serverName": "5885", "provider": "digea"},
     {"epgName": "nickelodeonplus", "serverName": "5910", "provider": "digea"},
@@ -137,7 +137,7 @@ channels = [
     {"epgName": "capitaltv", "serverName": "561166", "provider": "cyta"},
     {"epgName": "extracy", "serverName": "561178", "provider": "cyta"},
     {"epgName": "smiletvcy", "serverName": "561210", "provider": "cyta"},
-    {"epgName": "verginacy", "serverName": "2221", "provider": "cyta"},
+    {"epgName": "berginacy", "serverName": "2221", "provider": "cyta"},
     
     {"epgName": "cytavisionsports1", "serverName": "5262045", "provider": "cyta"},
     {"epgName": "cytavisionsports2", "serverName": "5262066", "provider": "cyta"},
