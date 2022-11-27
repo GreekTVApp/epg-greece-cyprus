@@ -3,7 +3,7 @@ channels = [
     # Panelladika
     {"epgName": "alpha", "serverName": "100", "provider": "digea"},
     {"epgName": "ant1", "serverName": "300", "provider": "digea"},
-    {"epgName": "open", "serverName": "800", "provider": "digea"},
+    {"epgName": "openTV", "serverName": "800", "provider": "digea"},
     {"epgName": "mtv", "serverName": "400", "provider": "digea"},
     {"epgName": "skai", "serverName": "600", "provider": "digea"},
     {"epgName": "star", "serverName": "700", "provider": "digea"},
@@ -28,7 +28,7 @@ channels = [
     # Kendriki Makedonia
     {"epgName": "4e", "serverName": "5850", "provider": "digea"},
     {"epgName": "atlastv", "serverName": "5855", "provider": "digea"},
-    {"epgName": "vergina", "serverName": "5860", "provider": "digea"},
+    {"epgName": "verginatv", "serverName": "5860", "provider": "digea"},
     {"epgName": "europeone", "serverName": "5880", "provider": "digea"},
     {"epgName": "epsilonthess", "serverName": "5885", "provider": "digea"},
     {"epgName": "nickelodeonplus", "serverName": "5910", "provider": "digea"},
@@ -46,7 +46,7 @@ channels = [
 
     # Dytiki Ellada
     {"epgName": "arttv", "serverName": "7000", "provider": "digea"},
-    {"epgName": "axeloostv", "serverName": "7005", "provider": "digea"},
+    {"epgName": "axelwostv", "serverName": "7005", "provider": "digea"},
     {"epgName": "vimatv", "serverName": "7010", "provider": "digea"},
     {"epgName": "corfutv", "serverName": "7015", "provider": "digea"},
     {"epgName": "epirustv1", "serverName": "7050", "provider": "digea"},
@@ -58,11 +58,11 @@ channels = [
     {"epgName": "artpel", "serverName": "5002", "provider": "digea"},
     {"epgName": "axiontv", "serverName": "5004", "provider": "digea"},
     {"epgName": "besttv", "serverName": "5006", "provider": "digea"},
-    {"epgName": "ilektratv", "serverName": "5012", "provider": "digea"},
+    {"epgName": "hlektratv", "serverName": "5012", "provider": "digea"},
     {"epgName": "ionian", "serverName": "5014", "provider": "digea"},
     {"epgName": "lepanto", "serverName": "5030", "provider": "digea"},
     {"epgName": "lychnos", "serverName": "5048", "provider": "digea"},
-    {"epgName": "messogeiostv", "serverName": "5034", "provider": "digea"},
+    {"epgName": "mesogeiostv", "serverName": "5034", "provider": "digea"},
     {"epgName": "anet", "serverName": "5036", "provider": "digea"},
     {"epgName": "ort", "serverName": "5038", "provider": "digea"},
     {"epgName": "patratv", "serverName": "5007", "provider": "digea"},
@@ -101,7 +101,7 @@ channels = [
     # Kriti
     {"epgName": "notostv", "serverName": "7100", "provider": "digea"},
     {"epgName": "creta", "serverName": "7105", "provider": "digea"},
-    {"epgName": "krititv", "serverName": "7110", "provider": "digea"},
+    {"epgName": "krhthtv", "serverName": "7110", "provider": "digea"},
     {"epgName": "krititv1", "serverName": "7115", "provider": "digea"},
     {"epgName": "neatvcrete", "serverName": "7130", "provider": "digea"},
     {"epgName": "sitiatv", "serverName": "7135", "provider": "digea"},
@@ -116,7 +116,7 @@ channels = [
     {"epgName": "kosmos", "serverName": "7185", "provider": "digea"},
 
     # Kiklades
-    {"epgName": "sirostv1", "serverName": "7205", "provider": "digea"},
+    {"epgName": "syrostv1", "serverName": "7205", "provider": "digea"},
     {"epgName": "volcano", "serverName": "7210", "provider": "digea"},
 
     # BA Aigaio
@@ -136,7 +136,7 @@ channels = [
     {"epgName": "plustv", "serverName": "289568", "provider": "cyta"},
     {"epgName": "capitaltv", "serverName": "561166", "provider": "cyta"},
     {"epgName": "extracy", "serverName": "561178", "provider": "cyta"},
-    {"epgName": "smilecy", "serverName": "561210", "provider": "cyta"},
+    {"epgName": "smiletvcy", "serverName": "561210", "provider": "cyta"},
     {"epgName": "verginacy", "serverName": "2221", "provider": "cyta"},
     
     {"epgName": "cytavisionsports1", "serverName": "5262045", "provider": "cyta"},
