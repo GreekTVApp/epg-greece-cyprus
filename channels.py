@@ -3,7 +3,7 @@ channels = [
     # Panelladika
     {"epgName": "alpha", "serverName": "100", "provider": "digea"},
     {"epgName": "ant1", "serverName": "300", "provider": "digea"},
-    {"epgName": "openTV", "serverName": "800", "provider": "digea"},
+    {"epgName": "open", "serverName": "800", "provider": "digea"},
     {"epgName": "mtv", "serverName": "400", "provider": "digea"},
     {"epgName": "skai", "serverName": "600", "provider": "digea"},
     {"epgName": "star", "serverName": "700", "provider": "digea"},
@@ -108,21 +108,21 @@ channels = [
     {"epgName": "epsilonkriti", "serverName": "5570", "provider": "digea"},
 
     # Dodekannisa & Samos
-    {"epgName": "aigaiotv", "serverName": "7150", "provider": "digea"},
-    {"epgName": "kostv", "serverName": "7155", "provider": "digea"},
-    {"epgName": "iridatv", "serverName": "7160", "provider": "digea"},
-    {"epgName": "tharri", "serverName": "7170", "provider": "digea"},
-    {"epgName": "samiakitv", "serverName": "7175", "provider": "digea"},
-    {"epgName": "kosmos", "serverName": "7185", "provider": "digea"},
+    {"epgName": "aigaiotv", "serverName": "5720", "provider": "digea"},
+    {"epgName": "kostv", "serverName": "5750", "provider": "digea"},
+    {"epgName": "iridatv", "serverName": "5740", "provider": "digea"},
+    {"epgName": "tharri", "serverName": "5770", "provider": "digea"},
+    {"epgName": "samiakitv", "serverName": "5730", "provider": "digea"},
+    {"epgName": "kosmos", "serverName": "5760", "provider": "digea"},
 
     # Kiklades
-    {"epgName": "syrostv1", "serverName": "7205", "provider": "digea"},
-    {"epgName": "volcano", "serverName": "7210", "provider": "digea"},
+    {"epgName": "syrostv1", "serverName": "5850", "provider": "digea"},
+    {"epgName": "volcano", "serverName": "5860", "provider": "digea"},
 
     # BA Aigaio
-    {"epgName": "alithiatv", "serverName": "5800", "provider": "digea"},
-    {"epgName": "patridatv", "serverName": "5810", "provider": "digea"},
-    {"epgName": "aeolos", "serverName": "5815", "provider": "digea"},
+    {"epgName": "alithiatv", "serverName": "5130", "provider": "digea"},
+    {"epgName": "patridatv", "serverName": "5140", "provider": "digea"},
+    {"epgName": "aeolos", "serverName": "5150", "provider": "digea"},
 
 
     # Cyta
