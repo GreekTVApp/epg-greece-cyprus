@@ -167,6 +167,13 @@ channels = [
     {"epgName": "novasportsextra3", "serverName": "52027412", "provider": "cyta"},
     {"epgName": "novasportsextra4", "serverName": "52027180", "provider": "cyta"},
     
+    {"epgName": "novacinema1", "serverName": "216271", "provider": "cyta"},
+    {"epgName": "novacinema1", "serverName": "571696", "provider": "cyta"},
+    {"epgName": "novacinema1", "serverName": "216369", "provider": "cyta"},
+    {"epgName": "novacinema1", "serverName": "586278", "provider": "cyta"},
+    {"epgName": "novalife", "serverName": "211392", "provider": "cyta"},
+    
+    
     {"epgName": "Discoverychannel", "serverName": "213732", "provider": "cyta"},
     {"epgName": "DiscoveryScience", "serverName": "213801", "provider": "cyta"},
     {"epgName": "AnimalPlanet", "serverName": "211380", "provider": "cyta"},
