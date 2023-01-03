@@ -1,13 +1,13 @@
 channels = [
     # Digea
     # Panelladika
-    {"epgName": "alpha", "serverName": "100", "provider": "digea"},
-    {"epgName": "ant1", "serverName": "300", "provider": "digea"},
-    {"epgName": "open", "serverName": "800", "provider": "digea"},
-    {"epgName": "mtv", "serverName": "400", "provider": "digea"},
-    {"epgName": "skai", "serverName": "600", "provider": "digea"},
-    {"epgName": "star", "serverName": "700", "provider": "digea"},
-    {"epgName": "mega", "serverName": "900", "provider": "digea"},
+    {"epgName": "alpha", "serverName": "3100", "provider": "digea"},
+    {"epgName": "ant1", "serverName": "3300", "provider": "digea"},
+    {"epgName": "open", "serverName": "3400", "provider": "digea"},
+    {"epgName": "mtv", "serverName": "3700", "provider": "digea"},
+    {"epgName": "skai", "serverName": "3200", "provider": "digea"},
+    {"epgName": "star", "serverName": "3500", "provider": "digea"},
+    {"epgName": "mega", "serverName": "3600", "provider": "digea"},
 
     # An. Mak. Thraki
     {"epgName": "alfa", "serverName": "4080", "provider": "digea"},
