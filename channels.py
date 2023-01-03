@@ -203,7 +203,6 @@ channels = [
     {"epgName": "ertsports", "serverName": "ert-sports-live-ww", "provider": "ertflix"},
     {"epgName": "ertworld", "serverName": "ept-world-live", "provider": "ertflix"},
     {"epgName": "ertnews", "serverName": "ert-news", "provider": "ertflix"},
-    {"epgName": "ertnews2", "serverName": "ert-news-4", "provider": "ertflix"},
 
     # Antenna Europe
     {"epgName": "ant1europe", "serverName": "", "provider": "ant1eu"},
