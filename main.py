@@ -5,6 +5,7 @@ import xmlutil
 
 
 def main():
+    open('epg-tmp.xml', 'w').close()
     xmlutil.append('<?xml version="1.0" encoding="UTF-8" ?>')
     xmlutil.append('<tv generator-info-name="epg-greece-cyprus" '
                    'generator-info-url="https://github.com/GreekTVApp/epg-greece-cyprus">')
