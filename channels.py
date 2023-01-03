@@ -4,7 +4,7 @@ channels = [
     {"epgName": "alpha", "serverName": "3100", "provider": "digea"},
     {"epgName": "ant1", "serverName": "3300", "provider": "digea"},
     {"epgName": "open", "serverName": "3400", "provider": "digea"},
-    {"epgName": "mtv", "serverName": "400", "provider": "digea"},
+    {"epgName": "mtv", "serverName": "3700", "provider": "digea"},
     {"epgName": "skai", "serverName": "3200", "provider": "digea"},
     {"epgName": "star", "serverName": "3500", "provider": "digea"},
     {"epgName": "mega", "serverName": "3600", "provider": "digea"},
