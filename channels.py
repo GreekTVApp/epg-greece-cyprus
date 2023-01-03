@@ -168,9 +168,9 @@ channels = [
     {"epgName": "novasportsextra4", "serverName": "52027180", "provider": "cyta"},
     
     {"epgName": "novacinema1", "serverName": "216271", "provider": "cyta"},
-    {"epgName": "novacinema1", "serverName": "571696", "provider": "cyta"},
-    {"epgName": "novacinema1", "serverName": "216369", "provider": "cyta"},
-    {"epgName": "novacinema1", "serverName": "586278", "provider": "cyta"},
+    {"epgName": "novacinema2", "serverName": "571696", "provider": "cyta"},
+    {"epgName": "novacinema3", "serverName": "216369", "provider": "cyta"},
+    {"epgName": "novacinema4", "serverName": "586278", "provider": "cyta"},
     {"epgName": "novalife", "serverName": "211392", "provider": "cyta"},
     
     
