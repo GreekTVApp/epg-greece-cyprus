@@ -74,7 +74,7 @@ channels = [
     {"epgName": "astratv", "serverName": "4680", "provider": "digea"},
     {"epgName": "thessaliatv", "serverName": "4670", "provider": "digea"},
     {"epgName": "trt", "serverName": "4700", "provider": "digea"},
-    {"epgName": "formediatv", "serverName": "5965", "provider": "digea"},
+    {"epgName": "formediatv", "serverName": "4710", "provider": "digea"},
     {"epgName": "smileplus", "serverName": "4690", "provider": "digea"},
 
     # Sterea Ellada
