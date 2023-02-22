@@ -15,7 +15,9 @@ HEADERS = {
 TIMEZONE = datetime.now(pytz.timezone('Europe/Athens')).strftime('%z')
 
 
-def parse(server_name, epg_name, digea_cache):
+def parse(channel, digea_cache):
+    server_name = channel.get('serverName')
+    epg_name = channel.get('epgName')
     print(f'{epg_name} start')
 
     channel_epg = []
@@ -57,6 +59,7 @@ def parse(server_name, epg_name, digea_cache):
 
             channel_epg.append(program_object)
 
-    xmlutil.push(epg_name, channel_epg)
+    icon = channel.get('icon')
+    xmlutil.push(epg_name, channel_epg, icon)
 
 

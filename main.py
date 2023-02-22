@@ -15,13 +15,13 @@ def main():
     for channel in channels:
         try:
             if channel.get("provider") == 'digea':
-                digeaparser.parse(channel.get('serverName'), channel.get('epgName'), digea_cache)
+                digeaparser.parse(channel, digea_cache)
             elif channel.get("provider") == 'cyta':
-                cytaparser.parse(channel.get('serverName'), channel.get('epgName'))
+                cytaparser.parse(channel)
             elif channel.get("provider") == 'ertflix':
-                ertflixparser.parse(channel.get('serverName'), channel.get('epgName'))
+                ertflixparser.parse(channel)
             elif channel.get("provider") == 'ant1eu':
-                ant1euparser.parse(channel.get('serverName'), channel.get('epgName'))
+                ant1euparser.parse(channel)
         except:
             traceback.print_exc()
             print(f'{channel.get("epgName")} error')
