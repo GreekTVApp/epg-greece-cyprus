@@ -126,17 +126,17 @@ channels = [
 
 
     # Cyta
-    {"epgName": "rik1", "serverName": "561066", "provider": "cyta", "icon": "https://data.greektv.ml/logos/rik1.png"},
-    {"epgName": "rik2", "serverName": "561078", "provider": "cyta", "icon": "https://data.greektv.ml/logos/rik2.png"},
-    {"epgName": "rikhd", "serverName": "608096", "provider": "cyta", "icon": "https://data.greektv.ml/logos/rikhd.png"},
-    {"epgName": "omega", "serverName": "289555", "provider": "cyta", "icon": "https://data.greektv.ml/logos/omega.png"},
-    {"epgName": "ant1cy", "serverName": "289542", "provider": "cyta", "icon": "https://data.greektv.ml/logos/ant1cy.png"},
-    {"epgName": "sigma", "serverName": "289530", "provider": "cyta", "icon": "https://data.greektv.ml/logos/sigma.png"},
-    {"epgName": "alphacy", "serverName": "289607", "provider": "cyta", "icon": "https://data.greektv.ml/logos/alphacy.png"},
-    {"epgName": "plustv", "serverName": "289568", "provider": "cyta", "icon": "https://data.greektv.ml/logos/plustv.png"},
-    {"epgName": "capitaltv", "serverName": "561166", "provider": "cyta", "icon": "https://data.greektv.ml/logos/capital.png"},
-    {"epgName": "extracy", "serverName": "561178", "provider": "cyta", "icon": "https://data.greektv.ml/logos/extracy.png"},
-    {"epgName": "smiletvcy", "serverName": "561210", "provider": "cyta", "icon": None},
+    {"epgName": "rik1", "serverName": "2222", "provider": "cyta", "icon": "https://data.greektv.ml/logos/rik1.png"},
+    {"epgName": "rik2", "serverName": "2223", "provider": "cyta", "icon": "https://data.greektv.ml/logos/rik2.png"},
+    {"epgName": "rikhd", "serverName": "2224", "provider": "cyta", "icon": "https://data.greektv.ml/logos/rikhd.png"},
+    {"epgName": "omega", "serverName": "2225", "provider": "cyta", "icon": "https://data.greektv.ml/logos/omega.png"},
+    {"epgName": "ant1cy", "serverName": "2226", "provider": "cyta", "icon": "https://data.greektv.ml/logos/ant1cy.png"},
+    {"epgName": "sigma", "serverName": "2227", "provider": "cyta", "icon": "https://data.greektv.ml/logos/sigma.png"},
+    {"epgName": "alphacy", "serverName": "2228", "provider": "cyta", "icon": "https://data.greektv.ml/logos/alphacy.png"},
+    {"epgName": "plustv", "serverName": "2229", "provider": "cyta", "icon": "https://data.greektv.ml/logos/plustv.png"},
+    {"epgName": "capitaltv", "serverName": "2230", "provider": "cyta", "icon": "https://data.greektv.ml/logos/capital.png"},
+    {"epgName": "extracy", "serverName": "2231", "provider": "cyta", "icon": "https://data.greektv.ml/logos/extracy.png"},
+    {"epgName": "smiletvcy", "serverName": "2232", "provider": "cyta", "icon": None},
     {"epgName": "berginacy", "serverName": "2221", "provider": "cyta", "icon": None},
     
     {"epgName": "cytavisionsports1", "serverName": "5262045", "provider": "cyta", "icon": None},
