@@ -1,5 +1,5 @@
 from channels import channels
-from parsers import digeaparser, cytaparser, ertflixparser, ant1euparser
+from parsers import digeaparser, cytaparser, ertflixparser, ant1euparser, cosmoteparser
 import traceback
 import xmlutil
 
@@ -11,10 +11,13 @@ def main():
                    'generator-info-url="https://github.com/GreekTVApp/epg-greece-cyprus">')
 
     digea_cache = {}
+    cosmote_cache = {}
 
     for channel in channels:
         try:
-            if channel.get("provider") == 'digea':
+            if channel.get("provider") == 'cosmote':
+                cosmoteparser.parse(channel, cosmote_cache)
+            elif channel.get("provider") == 'digea':
                 digeaparser.parse(channel, digea_cache)
             elif channel.get("provider") == 'cyta':
                 cytaparser.parse(channel)

@@ -1,4 +1,21 @@
 channels = [
+
+    # Cosmote
+    {"epgName": "ertnews-cosmote", "serverName": "135403629", "provider": "cosmote", "icon":None},
+    {"epgName": "ert1-cosmote", "serverName": "39846", "provider": "cosmote", "icon":None},
+    {"epgName": "ert2-cosmote", "serverName": "39404", "provider": "cosmote", "icon":None},
+    {"epgName": "ert3-cosmote", "serverName": "39557", "provider": "cosmote", "icon":None},
+    {"epgName": "ant1-cosmote", "serverName": "39081", "provider": "cosmote", "icon":None},
+    {"epgName": "alpha-cosmote", "serverName": "822826", "provider": "cosmote", "icon":None},
+    {"epgName": "star-cosmote", "serverName": "822769", "provider": "cosmote", "icon":None},
+    {"epgName": "skai-cosmote", "serverName": "38690", "provider": "cosmote", "icon":None},
+    {"epgName": "open-cosmote", "serverName": "39506", "provider": "cosmote", "icon":None},
+    {"epgName": "fx-cosmote", "serverName": "9703268", "provider": "cosmote", "icon":None},
+    {"epgName": "one_channel-cosmote", "serverName": "64893581", "provider": "cosmote", "icon":None},
+    {"epgName": "mega-cosmote", "serverName": "81344434", "provider": "cosmote", "icon":None},
+    {"epgName": "makedonia-cosmote", "serverName": "39115", "provider": "cosmote", "icon":None},
+    {"epgName": "naftemporiki-cosmote", "serverName": "135743656", "provider": "cosmote", "icon":None},
+
     # Digea
     # Panelladika
     {"epgName": "alpha", "serverName": "3100", "provider": "digea", "icon": "https://data.greektv.ml/logos/alpha.png"},
