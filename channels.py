@@ -1,21 +1,8 @@
 channels = [
-
     # Cosmote
-    {"epgName": "vouli-cosmote", "serverName": "38673", "provider": "cosmote", "icon":None},
-    {"epgName": "ertnews-cosmote", "serverName": "135403629", "provider": "cosmote", "icon":None},
-    {"epgName": "ert1-cosmote", "serverName": "39846", "provider": "cosmote", "icon":None},
-    {"epgName": "ert2-cosmote", "serverName": "39404", "provider": "cosmote", "icon":None},
-    {"epgName": "ert3-cosmote", "serverName": "39557", "provider": "cosmote", "icon":None},
-    {"epgName": "ant1-cosmote", "serverName": "39081", "provider": "cosmote", "icon":None},
-    {"epgName": "alpha-cosmote", "serverName": "822826", "provider": "cosmote", "icon":None},
-    {"epgName": "star-cosmote", "serverName": "822769", "provider": "cosmote", "icon":None},
-    {"epgName": "skai-cosmote", "serverName": "38690", "provider": "cosmote", "icon":None},
-    {"epgName": "open-cosmote", "serverName": "39506", "provider": "cosmote", "icon":None},
-    {"epgName": "fx-cosmote", "serverName": "9703268", "provider": "cosmote", "icon":None},
-    {"epgName": "one_channel-cosmote", "serverName": "64893581", "provider": "cosmote", "icon":None},
-    {"epgName": "mega-cosmote", "serverName": "81344434", "provider": "cosmote", "icon":None},
-    {"epgName": "makedonia-cosmote", "serverName": "39115", "provider": "cosmote", "icon":None},
-    {"epgName": "naftemporiki-cosmote", "serverName": "135743656", "provider": "cosmote", "icon":None},
+    {"epgName": "ert1", "serverName": "39846", "provider": "cosmote", "icon": "https://data.greektv.ml/logos/ert1.png"},
+    {"epgName": "ert2", "serverName": "39404", "provider": "cosmote", "icon": "https://data.greektv.ml/logos/ert2.png"},
+    {"epgName": "ert3", "serverName": "39557", "provider": "cosmote", "icon": "https://data.greektv.ml/logos/ert3.png"},
 
     # Digea
     # Panelladika
@@ -212,12 +199,7 @@ channels = [
     {"epgName": "BabyTV", "serverName": "2743", "provider": "cyta", "icon": None},
     {"epgName": "EuroNews", "serverName": "573974", "provider": "cyta", "icon": "https://data.greektv.ml/logos/euronews.png"},
     
-    
- 
     # Ertflix
-    {"epgName": "ert1", "serverName": "ept1-live", "provider": "ertflix", "icon": "https://data.greektv.ml/logos/ert1.png"},
-    {"epgName": "ert2", "serverName": "ept2-live", "provider": "ertflix", "icon": "https://data.greektv.ml/logos/ert2.png"},
-    {"epgName": "ert3", "serverName": "ept3-live-2", "provider": "ertflix", "icon": "https://data.greektv.ml/logos/ert3.png"},
     {"epgName": "ertsports", "serverName": "ert-sports-live-ww", "provider": "ertflix", "icon": "https://data.greektv.ml/logos/ertsports.png"},
     {"epgName": "ertworld", "serverName": "ept-world-live", "provider": "ertflix", "icon": "https://data.greektv.ml/logos/ertworld.png"},
     {"epgName": "ertnews", "serverName": "ert-news", "provider": "ertflix", "icon": "https://data.greektv.ml/logos/ertnews.png"},

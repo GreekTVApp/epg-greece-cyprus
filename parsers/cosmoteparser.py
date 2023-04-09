@@ -46,6 +46,10 @@ def parse(channel, cosmote_cache):
             end_time_string = day + ' ' + program['endTime'] + ' ' + TIMEZONE
             end_time = datetime.strptime(end_time_string, '%d-%m-%Y %H:%M %z').timestamp()
 
+            # If end time is less than start time, it means that the program ends on the next day
+            if end_time < start_time:
+                end_time = end_time + 86400
+
             program_object = {
                 'channel': epg_name,
                 'title': program['title'],
