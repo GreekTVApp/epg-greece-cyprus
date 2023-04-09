@@ -1,6 +1,7 @@
 channels = [
 
     # Cosmote
+    {"epgName": "vouli-cosmote", "serverName": "38673", "provider": "cosmote", "icon":None},
     {"epgName": "ertnews-cosmote", "serverName": "135403629", "provider": "cosmote", "icon":None},
     {"epgName": "ert1-cosmote", "serverName": "39846", "provider": "cosmote", "icon":None},
     {"epgName": "ert2-cosmote", "serverName": "39404", "provider": "cosmote", "icon":None},
