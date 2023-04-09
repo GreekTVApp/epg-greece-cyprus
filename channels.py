@@ -222,9 +222,6 @@ channels = [
     {"epgName": "EuroNews", "serverName": "573974", "provider": "cyta", "icon": "https://data.greektv.ml/logos/euronews.png"},
     
     # Ertflix
-    {"epgName": "ert1", "serverName": "ept1-live", "provider": "ertflix", "icon": "https://data.greektv.ml/logos/ert1.png"},
-    {"epgName": "ert2", "serverName": "ept2-live", "provider": "ertflix", "icon": "https://data.greektv.ml/logos/ert2.png"},
-    {"epgName": "ert3", "serverName": "ept3-live-2", "provider": "ertflix", "icon": "https://data.greektv.ml/logos/ert3.png"},
     {"epgName": "ertsports", "serverName": "ert-sports-live-ww", "provider": "ertflix", "icon": "https://data.greektv.ml/logos/ertsports.png"},
     {"epgName": "ertworld", "serverName": "ept-world-live", "provider": "ertflix", "icon": "https://data.greektv.ml/logos/ertworld.png"},
     {"epgName": "ertnews", "serverName": "ert-news", "provider": "ertflix", "icon": "https://data.greektv.ml/logos/ertnews.png"},
