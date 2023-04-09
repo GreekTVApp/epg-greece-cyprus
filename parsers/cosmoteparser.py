@@ -4,7 +4,7 @@ import requests
 import xmlutil
 import os
 
-URL = 'https://www.cosmotetv.gr/portal/residential/program?p_p_id=dayprogram_WAR_OTETVportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_cacheability=cacheLevelPage&_dayprogram_WAR_OTETVportlet_date={DATE}&_dayprogram_WAR_OTETVportlet_feedType=EPG&_dayprogram_WAR_OTETVportlet_start=0&_dayprogram_WAR_OTETVportlet_end=15&_dayprogram_WAR_OTETVportlet_platform=DTH&_dayprogram_WAR_OTETVportlet_categoryId=-1'
+URL = 'https://www.cosmotetv.gr/portal/residential/program?p_p_id=dayprogram_WAR_OTETVportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_cacheability=cacheLevelPage&_dayprogram_WAR_OTETVportlet_date={DATE}&_dayprogram_WAR_OTETVportlet_feedType=EPG&_dayprogram_WAR_OTETVportlet_start=0&_dayprogram_WAR_OTETVportlet_end=102&_dayprogram_WAR_OTETVportlet_platform=DTH&_dayprogram_WAR_OTETVportlet_categoryId=-1'
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0',
@@ -29,7 +29,7 @@ def parse(channel, cosmote_cache):
         if date_str not in cosmote_cache:
             print(f'Cosmote: {date_str} not found, caching..')
 
-            response = requests.get(URL.replace('{DATE}',date_str), headers=HEADERS, timeout=60)
+            response = requests.get(URL.replace('{DATE}',date_str), headers=HEADERS, timeout=160)
 
             cosmote_cache[date_str] = response.json()
 
