@@ -3,6 +3,7 @@ from datetime import datetime, timedelta
 import pytz
 import xmlutil
 import json
+import os
 
 URL_PARAMS = '?$headers={"Content-Type":"application/json;charset=utf-8","X-Api-Date-Format":"unix",' \
              '"X-Api-Camel-Case":true}'
@@ -16,6 +17,11 @@ HEADERS = {
     'Referer': 'https://www.ertflix.gr/',
     'Origin': 'https://www.ertflix.gr'
 }
+
+PROXY = {
+    'http': os.environ['PROXY'],
+    'https': os.environ['PROXY']
+    }
 
 
 def parse(channel):
@@ -36,7 +42,7 @@ def parse(channel):
         'orChannelCodenames': [server_name]
     }
 
-    response = requests.post(URL, headers=HEADERS, data=json.dumps(post_data))
+    response = requests.post(URL, headers=HEADERS, data=json.dumps(post_data), proxies=PROXY)
     res_json = response.json()
 
     ids = [d['id'] for d in res_json['programs'][server_name]]
@@ -46,7 +52,7 @@ def parse(channel):
         "requestedTiles": [{'id': i} for i in ids]
     }
 
-    response2 = requests.post(URL_TILES, headers=HEADERS, data=json.dumps(post_data_tiles))
+    response2 = requests.post(URL_TILES, headers=HEADERS, data=json.dumps(post_data_tiles), proxies=PROXY)
 
     tiles = response2.json()['tiles']
 
