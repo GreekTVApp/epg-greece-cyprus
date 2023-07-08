@@ -214,7 +214,7 @@ channels = [
     {"epgName": "Eurosport2", "serverName": "586291", "provider": "cyta", "icon": None},
     {"epgName": "BabyTV", "serverName": "2743", "provider": "cyta", "icon": None},
     {"epgName": "EuroNews", "serverName": "39659", "provider": "cosmote", "icon": "https://data.greektv.ml/logos/euronews.png"},
-    {"epgName": "Panik TV", "serverName": "115625446", "provider": "cosmote", "icon": None},
+    {"epgName": "PanikTV", "serverName": "115625446", "provider": "cosmote", "icon": None},
     {"epgName": "Naftemporiki", "serverName": "135743656", "provider": "cosmote", "icon": None},
     {"epgName": "vouli", "serverName": "38673", "provider": "cosmote", "icon": None},
     
