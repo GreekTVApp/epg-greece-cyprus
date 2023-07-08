@@ -212,9 +212,11 @@ channels = [
     
     {"epgName": "Eurosport1", "serverName": "216356", "provider": "cyta", "icon": None},
     {"epgName": "Eurosport2", "serverName": "586291", "provider": "cyta", "icon": None},
-    {"epgName": "voulitv", "serverName": "216630", "provider": "cyta", "icon": "https://data.greektv.ml/logos/voulitv.png"},
     {"epgName": "BabyTV", "serverName": "2743", "provider": "cyta", "icon": None},
-    {"epgName": "EuroNews", "serverName": "573974", "provider": "cyta", "icon": "https://data.greektv.ml/logos/euronews.png"},
+    {"epgName": "EuroNews", "serverName": "39659", "provider": "cosmote", "icon": "https://data.greektv.ml/logos/euronews.png"},
+    {"epgName": "Panik TV", "serverName": "115625446", "provider": "cosmote", "icon": None},
+    {"epgName": "Naftemporiki", "serverName": "135743656", "provider": "cosmote", "icon": None},
+    {"epgName": "vouli", "serverName": "38673", "provider": "cosmote", "icon": None},
     
     # Ertflix
     {"epgName": "ert1", "serverName": "ept1-live", "provider": "ertflix", "icon": "https://data.greektv.ml/logos/ert1.png"},
