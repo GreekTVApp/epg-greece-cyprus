@@ -81,7 +81,6 @@ channels = [
     {"epgName": "artpel", "serverName": "4490", "provider": "digea", "icon": "https://data.greektv.ml/logos/artpel.png"},
     {"epgName": "axiontv", "serverName": "4500", "provider": "digea", "icon": "https://data.greektv.ml/logos/axiontv.png"},
     {"epgName": "besttv", "serverName": "4510", "provider": "digea", "icon": "https://data.greektv.ml/logos/besttv.png"},
-    {"epgName": "hlektratv", "serverName": "4440", "provider": "digea", "icon": "https://data.greektv.ml/logos/hlektratv.png"},
     {"epgName": "ionian", "serverName": "4520", "provider": "digea", "icon": "https://data.greektv.ml/logos/ionian.png"},
     {"epgName": "lepanto", "serverName": "4530", "provider": "digea", "icon": "https://data.greektv.ml/logos/lepanto.png"},
     {"epgName": "lychnos", "serverName": "4450", "provider": "digea", "icon": "https://data.greektv.ml/logos/lychnos.png"},
