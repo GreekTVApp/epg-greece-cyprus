@@ -127,7 +127,7 @@ channels = [
     {"epgName": "krititv1", "serverName": "5590", "provider": "digea", "icon": "https://data.greektv.ml/logos/krititv1.png"},
     {"epgName": "neatvcrete", "serverName": "5600", "provider": "digea", "icon": "https://data.greektv.ml/logos/neatvcrete.png"},
     {"epgName": "sitiatv", "serverName": "5630", "provider": "digea", "icon": "https://data.greektv.ml/logos/sitiatv.png"},
-    {"epgName": "epsilonkriti", "serverName": "5570", "provider": "digea", "icon": "https://data.greektv.ml/logos/epsilonkriti.png"},
+    {"epgName": "thlekriti", "serverName": "5570", "provider": "digea", "icon": "https://data.greektv.ml/logos/epsilonkriti.png"},
 
     # Dodekannisa & Samos
     {"epgName": "aigaiotv", "serverName": "5720", "provider": "digea", "icon": "https://data.greektv.ml/logos/aigaiotv.png"},
