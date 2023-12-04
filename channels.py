@@ -4,12 +4,12 @@
     {"epgName": "cosmote_cinema_1", "serverName": "38979", "provider": "cosmote", "icon": None},
     {"epgName": "cosmote_cinema_2", "serverName": "8411809", "provider": "cosmote", "icon": None},
     {"epgName": "cosmote_cinema_3", "serverName": "38469", "provider": "cosmote", "icon": None},
-    {"epgName": "TCM HD", "serverName": "51768457", "provider": "cosmote", "icon": None},
-    {"epgName": "Village Cinema HD", "serverName": "38962", "provider": "cosmote", "icon": None},
-    {"epgName": "FX", "serverName": "9703268", "provider": "cosmote", "icon": None},
-    {"epgName": "FX Life", "serverName": "8796016", "provider": "cosmote", "icon": None},
-    {"epgName": "COSMOTE SERIES HD", "serverName": "39523", "provider": "cosmote", "icon": None},
-    {"epgName": "COSMOTE SERIES MARATHON", "serverName": "92659259", "provider": "cosmote", "icon": None},
+    {"epgName": "tcm", "serverName": "51768457", "provider": "cosmote", "icon": None},
+    {"epgName": "Village Cinema", "serverName": "38962", "provider": "cosmote", "icon": None},
+    {"epgName": "fx", "serverName": "9703268", "provider": "cosmote", "icon": None},
+    {"epgName": "fx Life", "serverName": "8796016", "provider": "cosmote", "icon": None},
+    {"epgName": "cosmote series", "serverName": "39523", "provider": "cosmote", "icon": None},
+    {"epgName": "cosmote series marathon", "serverName": "92659259", "provider": "cosmote", "icon": None},
     
     # Sports
     {"epgName": "cosmote_sport_highlights", "serverName": "38605", "provider": "cosmote", "icon": None},
@@ -26,15 +26,7 @@
     {"epgName": "cosmote_sport_aek", "serverName": "133858931", "provider": "cosmote", "icon": None},
     {"epgName": "cosmote_sport_olympiacos", "serverName": "133858948", "provider": "cosmote", "icon": None},
     {"epgName": "cosmote_sport_panathinaikos", "serverName": "133858965", "provider": "cosmote", "icon": None},
-
-    # CARTOON
-    {"epgName": "BabyTV", "serverName": "2743", "provider": "cyta", "icon": None},
-    {"epgName": "Disney Channel", "serverName": "38724", "provider": "cosmote", "icon": None},
-    {"epgName": "Disney Junior", "serverName": "39234", "provider": "cosmote", "cosmote": None},
-    {"epgName": "ducktv", "serverName": "130382286", "provider": "cosmote", "icon": None},
-    {"epgName": "Cartoonito", "serverName": "2266", "provider": "cyta", "icon": None},
-    {"epgName": "Cartoon Network", "serverName": "2374", "provider": "cyta", "icon": None},
-    {"epgName": "smile tv cy", "serverName": "561210", "provider": "cyta", "icon": None},
+  
     
     # Digea
     # Panelladika
@@ -230,26 +222,32 @@
     
     {"epgName": "Eurosport1", "serverName": "216356", "provider": "cyta", "icon": None},
     {"epgName": "Eurosport2", "serverName": "586291", "provider": "cyta", "icon": None},
+    {"epgName": "EDGEsport HD", "serverName": "39591", "provider": "cosmote", "icon": None},
+    {"epgName": "Motorvision Channel HD", "serverName": "39200", "provider": "cosmote", "icon": None},
+    {"epgName": "GINX eSports", "serverName": "32900514", "provider": "cosmote", "icon": None},
     {"epgName": "EuroNews", "serverName": "39659", "provider": "cosmote", "icon": "https://data.greektv.ml/logos/euronews.png"},
-    {"epgName": "PanikTV", "serverName": "115625446", "provider": "cosmote", "icon": None},
     {"epgName": "Naftemporikitv", "serverName": "135743656", "provider": "cosmote", "icon": None},
     {"epgName": "vouli", "serverName": "38673", "provider": "cosmote", "icon": None},
-    {"epgName": "MAD Viral HD", "serverName": "38758", "provider": "cosmote", "icon": None},
     {"epgName": "DW", "serverName": "39863", "provider": "cosmote", "icon": None},
     {"epgName": "Sky News", "serverName": "118824732", "provider": "cosmote", "icon": None},
     {"epgName": "BBC News", "serverName": "38554", "provider": "cosmote", "icon": None},
     {"epgName": "CNN", "serverName": "51768474", "provider": "cosmote", "icon": None},
     {"epgName": "CNBC", "serverName": "38792", "provider": "cosmote", "icon": None},
-    {"epgName": "EDGEsport HD", "serverName": "39591", "provider": "cosmote", "icon": None},
-    {"epgName": "Motorvision Channel HD", "serverName": "39200", "provider": "cosmote", "icon": None},
-    {"epgName": "GINX eSports", "serverName": "32900514", "provider": "cosmote", "icon": None},
+    {"epgName": "PanikTV", "serverName": "115625446", "provider": "cosmote", "icon": None},
     {"epgName": "MTV Europe", "serverName": "822735", "provider": "cosmote", "icon": None},
     {"epgName": "MTV Live", "serverName": "39625", "provider": "cosmote", "icon": None},
     {"epgName": "MTV 00s", "serverName": "38656", "provider": "cosmote", "icon": None},
     {"epgName": "Stingray CMusic", "serverName": "822899", "provider": "cosmote", "icon": None},
     {"epgName": "Stingray iConcerts", "serverName": "38826", "provider": "cosmote", "icon": None},
     {"epgName": "MAD GreekZ", "serverName": "574124", "provider": "cyta", "icon": None},
-
+    {"epgName": "MAD Viral HD", "serverName": "38758", "provider": "cosmote", "icon": None},
+    {"epgName": "BabyTV", "serverName": "2743", "provider": "cyta", "icon": None},
+    {"epgName": "Disney Channel", "serverName": "38724", "provider": "cosmote", "icon": None},
+    {"epgName": "Disney Junior", "serverName": "39234", "provider": "cosmote", "cosmote": None},
+    {"epgName": "ducktv", "serverName": "130382286", "provider": "cosmote", "icon": None},
+    {"epgName": "Cartoonito", "serverName": "2266", "provider": "cyta", "icon": None},
+    {"epgName": "Cartoon Network", "serverName": "2374", "provider": "cyta", "icon": None},
+    {"epgName": "smile tv cy", "serverName": "561210", "provider": "cyta", "icon": None},
 
     # Ertflix
     {"epgName": "ert1", "serverName": "ept1-live", "provider": "ertflix", "icon": "https://data.greektv.ml/logos/ert1.png"},
