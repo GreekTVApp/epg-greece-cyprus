@@ -33,6 +33,9 @@ channels = [
     {"epgName": "Disney Channel", "serverName": "38724", "provider": "cosmote", "icon": None},
     {"epgName": "Disney Junior", "serverName": "39234", "provider": "cosmote", "cosmote": None},
     {"epgName": "ducktv", "serverName": "130382286", "provider": "cosmote", "icon": None},
+    {"epgName": "Cartoonito", "serverName": "2266", "provider": "cyta", "icon": None},
+    {"epgName": "Cartoon Network", "serverName": "2374", "provider": "cyta", "icon": None},
+    {"epgName": "smile tv cy", "serverName": "561210", "provider": "cyta", "icon": None},
     
     # Digea
     # Panelladika
@@ -224,6 +227,7 @@ channels = [
     {"epgName": "ViasatHistory", "serverName": "39608", "provider": "cosmote", "icon": None},
     {"epgName": "ViasatNature", "serverName": "29605373", "provider": "cosmote", "icon": None},
     {"epgName": "ViasatExplore", "serverName": "29605356", "provider": "cosmote", "icon": None},
+    {"epgName": "CBS Reality", "serverName": "2578", "provider": "cyta", "icon": None},
     
     {"epgName": "Eurosport1", "serverName": "216356", "provider": "cyta", "icon": None},
     {"epgName": "Eurosport2", "serverName": "586291", "provider": "cyta", "icon": None},
@@ -245,10 +249,9 @@ channels = [
     {"epgName": "MTV 00s", "serverName": "38656", "provider": "cosmote", "icon": None},
     {"epgName": "Stingray CMusic", "serverName": "822899", "provider": "cosmote", "icon": None},
     {"epgName": "Stingray iConcerts", "serverName": "38826", "provider": "cosmote", "icon": None},
+    {"epgName": "MAD GreekZ", "serverName": "574124", "provider": "cyta", "icon": None},
 
 
-
-    
     # Ertflix
     {"epgName": "ert1", "serverName": "ept1-live", "provider": "ertflix", "icon": "https://data.greektv.ml/logos/ert1.png"},
     {"epgName": "ert2", "serverName": "ept2-live", "provider": "ertflix", "icon": "https://data.greektv.ml/logos/ert2.png"},
