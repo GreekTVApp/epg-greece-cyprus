@@ -5,6 +5,7 @@ channels = [
     {"epgName": "cosmote_cinema_1", "serverName": "38979", "provider": "cosmote", "icon": None},
     {"epgName": "cosmote_cinema_2", "serverName": "8411809", "provider": "cosmote", "icon": None},
     {"epgName": "cosmote_cinema_3", "serverName": "38469", "provider": "cosmote", "icon": None},
+    {"epgName": "cosmote_cinema_christmas", "serverName": "148993214", "provider": "cosmote", "icon": None},
     {"epgName": "tcm", "serverName": "51768457", "provider": "cosmote", "icon": None},
     {"epgName": "Village Cinema", "serverName": "38962", "provider": "cosmote", "icon": None},
     {"epgName": "fx", "serverName": "9703268", "provider": "cosmote", "icon": None},
