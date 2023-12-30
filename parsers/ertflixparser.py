@@ -72,7 +72,7 @@ def parse(channel):
             'title': tile['title'],
             'start_time': tile['start'] / 1000,
             'end_time': tile['stop'] / 1000,
-            'description': subtitle + description
+            'description': subtitle.replace('&nbsp;', '') + description.replace('&nbsp;', '')
         }
 
         channel_epg.append(program_object)
