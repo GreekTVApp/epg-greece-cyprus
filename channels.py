@@ -264,6 +264,8 @@ channels = [
     {"epgName": "ertsports", "serverName": "ert-sports-live-ww", "provider": "ertflix", "icon": "https://data.greektv.ml/logos/ertsports.png"},
     {"epgName": "ertworld", "serverName": "ept-world-live", "provider": "ertflix", "icon": "https://data.greektv.ml/logos/ertworld.png"},
     {"epgName": "ertnews", "serverName": "ert-news", "provider": "ertflix", "icon": "https://data.greektv.ml/logos/ertnews.png"},
+    {"epgName": "ertmusic", "serverName": "music-tv", "provider": "ertflix"},
+    {"epgName": "ertkids", "serverName": "demo-channel", "provider": "ertflix"},
 
     # Antenna Europe
     {"epgName": "ant1europe", "serverName": "", "provider": "ant1eu", "icon": "https://data.greektv.ml/logos/ant1europe.png"},
