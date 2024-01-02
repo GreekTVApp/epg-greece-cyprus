@@ -256,7 +256,7 @@ channels = [
     {"epgName": "FTV", "serverName": "39829", "provider": "cosmote", "icon": None},
     {"epgName": "Al Jazeera", "serverName": "39676", "provider": "cosmote", "icon": None},
     {"epgName": "MyZen TV", "serverName": "117301459", "provider": "cosmote", "icon": None},
-    {"epgName": "Best Movies HD", "serverName": "573795", "provider": "cyta", "icon": None},
+    {"epgName": "Movies Best HD", "serverName": "573795", "provider": "cyta", "icon": None},
     
     # Ertflix
     {"epgName": "ert1", "serverName": "ept1-live", "provider": "ertflix", "icon": "https://data.greektv.ml/logos/ert1.png"},
