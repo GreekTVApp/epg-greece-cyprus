@@ -1,5 +1,5 @@
 from channels import channels
-from parsers import digeaparser, cytaparser, ertflixparser, ant1euparser, cosmoteparser
+from parsers import digeaparser, cytaparser, ertflixparser, ant1euparser, cosmoteparser, novaparser
 import traceback
 import xmlutil
 
@@ -10,8 +10,9 @@ def main():
     xmlutil.append('<tv generator-info-name="epg-greece-cyprus" '
                    'generator-info-url="https://github.com/GreekTVApp/epg-greece-cyprus">')
 
-    digea_cache = {}
     cosmote_cache = {}
+    digea_cache = {}
+    nova_cache = {}
 
     for channel in channels:
         try:
@@ -25,6 +26,8 @@ def main():
                 ertflixparser.parse(channel)
             elif channel.get("provider") == 'ant1eu':
                 ant1euparser.parse(channel)
+            elif channel.get("provider") == 'nova':
+                novaparser.parse(channel, nova_cache)
         except:
             traceback.print_exc()
             print(f'{channel.get("epgName")} error')

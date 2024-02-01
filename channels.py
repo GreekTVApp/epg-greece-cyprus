@@ -12,7 +12,7 @@ channels = [
     {"epgName": "fx Life", "serverName": "8796016", "provider": "cosmote", "icon": None},
     {"epgName": "cosmote series", "serverName": "39523", "provider": "cosmote", "icon": None},
     {"epgName": "cosmote series marathon", "serverName": "92659259", "provider": "cosmote", "icon": None},
-    
+
     # Sports
     {"epgName": "cosmote_sport_highlights", "serverName": "38605", "provider": "cosmote", "icon": None},
     {"epgName": "cosmote_sport_1", "serverName": "38605", "provider": "cosmote", "icon": None},
@@ -28,8 +28,8 @@ channels = [
     {"epgName": "cosmote_sport_aek", "serverName": "133858931", "provider": "cosmote", "icon": None},
     {"epgName": "cosmote_sport_olympiacos", "serverName": "133858948", "provider": "cosmote", "icon": None},
     {"epgName": "cosmote_sport_panathinaikos", "serverName": "133858965", "provider": "cosmote", "icon": None},
-  
-    
+
+
     # Digea
     # Panelladika
     {"epgName": "alpha", "serverName": "3100", "provider": "digea", "icon": "https://data.greektv.ml/logos/alpha.png"},
@@ -168,7 +168,7 @@ channels = [
     {"epgName": "extracy", "serverName": "561178", "provider": "cyta", "icon": "https://data.greektv.ml/logos/extracy.png"},
     {"epgName": "smiletvcy", "serverName": "561210", "provider": "cyta", "icon": None},
     {"epgName": "berginacy", "serverName": "2221", "provider": "cyta", "icon": None},
-    
+
     {"epgName": "cytavisionsports1", "serverName": "5262045", "provider": "cyta", "icon": None},
     {"epgName": "cytavisionsports2", "serverName": "5262066", "provider": "cyta", "icon": None},
     {"epgName": "cytavisionsports3", "serverName": "5264007", "provider": "cyta", "icon": None},
@@ -176,15 +176,15 @@ channels = [
     {"epgName": "cytavisionsports5", "serverName": "5264028", "provider": "cyta", "icon": None},
     {"epgName": "cytavisionsports6", "serverName": "5240465", "provider": "cyta", "icon": None},
     {"epgName": "cytavisionsports7", "serverName": "24653429", "provider": "cyta", "icon": None},
-    
-    
+
+
     {"epgName": "cablenetsports1", "serverName": "24718511", "provider": "cyta", "icon": None},
     {"epgName": "cablenetsports2", "serverName": "24720479", "provider": "cyta", "icon": None},
-    
+
     {"epgName": "primetel1", "serverName": "24721200", "provider": "cyta", "icon": None},
     {"epgName": "primetel2", "serverName": "24745093", "provider": "cyta", "icon": None},
     {"epgName": "primetel3", "serverName": "24745840", "provider": "cyta", "icon": None},
-    
+
     {"epgName": "novasportsstart", "serverName": "46137848", "provider": "cyta", "icon": None},
     {"epgName": "novasportsprime", "serverName": "583741", "provider": "cyta", "icon": None},
     {"epgName": "novasports2", "serverName": "213644", "provider": "cyta", "icon": None},
@@ -196,14 +196,14 @@ channels = [
     {"epgName": "novasportsextra2", "serverName": "52027399", "provider": "cyta", "icon": None},
     {"epgName": "novasportsextra3", "serverName": "52027412", "provider": "cyta", "icon": None},
     {"epgName": "novasportsextra4", "serverName": "52027180", "provider": "cyta", "icon": None},
-    
+
     {"epgName": "novacinema1", "serverName": "216271", "provider": "cyta", "icon": None},
     {"epgName": "novacinema2", "serverName": "571696", "provider": "cyta", "icon": None},
     {"epgName": "novacinema3", "serverName": "216369", "provider": "cyta", "icon": None},
     {"epgName": "novacinema4", "serverName": "586278", "provider": "cyta", "icon": None},
     {"epgName": "novalife", "serverName": "211392", "provider": "cyta", "icon": None},
-    
-    
+
+
     {"epgName": "Discoverychannel", "serverName": "213732", "provider": "cyta", "icon": None},
     {"epgName": "DiscoveryScience", "serverName": "213801", "provider": "cyta", "icon": None},
     {"epgName": "AnimalPlanet", "serverName": "211380", "provider": "cyta", "icon": None},
@@ -223,7 +223,7 @@ channels = [
     {"epgName": "CBS Reality", "serverName": "2578", "provider": "cosmote", "icon": None},
     {"epgName": "Nautical Channel HD", "serverName": "29605475", "provider": "cosmote", "icon": None},
     {"epgName": "Crime and Investigation", "serverName": "29605390", "provider": "cosmote", "icon": None},
-    
+
     {"epgName": "Eurosport1", "serverName": "216356", "provider": "cyta", "icon": None},
     {"epgName": "Eurosport2", "serverName": "586291", "provider": "cyta", "icon": None},
     {"epgName": "EDGEsport HD", "serverName": "39591", "provider": "cosmote", "icon": None},
@@ -257,7 +257,7 @@ channels = [
     {"epgName": "Al Jazeera", "serverName": "39676", "provider": "cosmote", "icon": None},
     {"epgName": "MyZen TV", "serverName": "117301459", "provider": "cosmote", "icon": None},
     {"epgName": "Movies Best HD", "serverName": "573795", "provider": "cyta", "icon": None},
-    
+
     # Ertflix
     {"epgName": "ert1", "serverName": "ept1-live", "provider": "ertflix", "icon": "https://data.greektv.ml/logos/ert1.png"},
     {"epgName": "ert2", "serverName": "ept2-live", "provider": "ertflix", "icon": "https://data.greektv.ml/logos/ert2.png"},
@@ -270,4 +270,8 @@ channels = [
 
     # Antenna Europe
     {"epgName": "ant1europe", "serverName": "", "provider": "ant1eu", "icon": "https://data.greektv.ml/logos/ant1europe.png"},
+
+    # NOVA
+    {"epgName": "NR1", "serverName": "59", "provider": "nova", "icon": None},
+    {"epgName": "Epic Drama", "serverName": "186", "provider": "nova", "icon": None},
 ]
