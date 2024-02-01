@@ -24,6 +24,7 @@ jobs:
       - name: run
         env:
             PROXY: ${{ secrets.PROXY }}
+            NOVA_TOKEN: ${{ secrets.NOVA_TOKEN }}
         run: |
           python main.py
           tv_sort --by-channel --duplicate-error --output epg.xml epg-tmp.xml
