@@ -31,7 +31,7 @@ def parse(channel, nova_cache):
 
     channel_epg = []
 
-    if nova_cache == {}:
+    if not nova_cache:
         print(f'NOVA: epg_token not found, caching..')
         response = requests.post(url=epg_token_url, headers=epg_token_headers)
         nova_cache['epg_token'] = response.json()['access_token']
@@ -59,12 +59,26 @@ def parse(channel, nova_cache):
         end_time_str = program.get('endTime')
         end_time = datetime.strptime(end_time_str, "%Y-%m-%dT%H:%M:%S.%f%z").timestamp()
 
+        program_title = program.get('title', 'N/A')
+        program_desc = program.get('shortDescription', 'N/A')
+
+        age_rating = program.get('ageRating', '')
+
+        if age_rating == '0':
+            age_rating = ''
+
+        if age_rating == 'null':
+            combined_title = program_title
+        else:
+            converted_rating = f'[K{age_rating}]'
+            combined_title = f'{converted_rating} {program_title}'
+
         program_object = {
             'channel': epg_name,
-            'title': program.get('title', 'N/A'),
+            'title': combined_title,
             'start_time': start_time,
             'end_time': end_time,
-            'description': program.get('shortDescription', 'N/A')
+            'description': program_desc
         }
 
         channel_epg.append(program_object)
