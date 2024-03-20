@@ -176,10 +176,12 @@ channels = [
     {"epgName": "cytavisionsports5", "serverName": "5264028", "provider": "cyta", "icon": None},
     {"epgName": "cytavisionsports6", "serverName": "5240465", "provider": "cyta", "icon": None},
     {"epgName": "cytavisionsports7", "serverName": "24653429", "provider": "cyta", "icon": None},
+    {"epgName": "cytavisionsportspremierleague", "serverName": "54111722", "provider": "cyta", "icon": None},
 
 
     {"epgName": "cablenetsports1", "serverName": "24718511", "provider": "cyta", "icon": None},
     {"epgName": "cablenetsports2", "serverName": "24720479", "provider": "cyta", "icon": None},
+    {"epgName": "cablenetsports3", "serverName": "52939077", "provider": "cyta", "icon": None},
 
     {"epgName": "primetel1", "serverName": "24721200", "provider": "cyta", "icon": None},
     {"epgName": "primetel2", "serverName": "24745093", "provider": "cyta", "icon": None},
@@ -257,6 +259,8 @@ channels = [
     {"epgName": "Al Jazeera", "serverName": "39676", "provider": "cosmote", "icon": None},
     {"epgName": "MyZen TV", "serverName": "117301459", "provider": "cosmote", "icon": None},
     {"epgName": "Movies Best HD", "serverName": "573795", "provider": "cyta", "icon": None},
+    {"epgName": "Greek Cinema", "serverName": "573851", "provider": "cyta", "icon": None},
+
 
     # Ertflix
     {"epgName": "ert1", "serverName": "ept1-live", "provider": "ertflix", "icon": "https://data.greektv.ml/logos/ert1.png"},
