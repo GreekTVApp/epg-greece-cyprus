@@ -278,4 +278,9 @@ channels = [
     # NOVA
     {"epgName": "NR1", "serverName": "59", "provider": "nova", "icon": None},
     {"epgName": "Epic Drama", "serverName": "186", "provider": "nova", "icon": None},
+    {"epgName": "novasports1", "serverName": "23", "provider": "nova", "icon": None},
+    {"epgName": "novasportsnews", "serverName": "6", "provider": "nova", "icon": None},
+    {"epgName": "novasportspl", "serverName": "177", "provider": "nova", "icon": None},
+    {"epgName": "Extreme Sports", "serverName": "191", "provider": "nova", "icon": None},
+    {"epgName": "Travel Channel", "serverName": "12", "provider": "nova", "icon": None},
 ]
